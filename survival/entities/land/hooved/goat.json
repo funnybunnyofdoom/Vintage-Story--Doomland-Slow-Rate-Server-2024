@@ -2,37 +2,118 @@
 	"code": "goat",
 	"class": "EntityAgent",
 	"variantgroups": [
-		{ "code": "type", "states": ["angora", "ibexalp", "ibexnub", "markhor", "mountain", "muskox", "nubian", "sirohi", "takingold", "turdag", "valais" ] },
-		{ "code": "gender", "states": ["male", "female"] },
-		{ "code": "age", "states": ["adult", "baby"] }
+		{
+			"code": "type",
+			"states": [ "angora", "ibexalp", "ibexnub", "markhor", "mountain", "muskox", "nubian", "sirohi", "takingold", "turdag", "valais" ]
+		},
+		{
+			"code": "gender",
+			"states": [ "male", "female" ]
+		},
+		{
+			"code": "age",
+			"states": [ "adult", "baby" ]
+		}
 	],
 	"hitBoxSizeByType": {
-		"goat-angora-*-adult": { "x": 0.8,"y": 0.9},
-		"goat-ibexalp-*-adult": { "x": 0.9,"y": 0.9},
-		"goat-ibexnub-*-adult": { "x": 0.8,"y": 0.7},
-		"goat-markhor-*-adult": { "x": 0.9,"y": 0.9},
-		"goat-mountain-*-adult": { "x": 0.9,"y": 1.0},
-		"goat-muskox-*-adult": { "x": 1.4,"y": 1.4},
-		"goat-nubian-*-adult": { "x": 0.8,"y": 0.8},
-		"goat-sirohi-*-adult": { "x": 0.9,"y": 0.9},
-		"goat-takingold-*-adult": { "x": 1.2,"y": 1.3},
-		"goat-turdag-*-adult": { "x": 0.9,"y": 0.9},
-		"goat-valais-*-adult": { "x": 0.8,"y": 0.9},
-		"*": { "x": 0.7,"y": 0.7}
+		"goat-angora-*-adult": {
+			"x": 0.8,
+			"y": 0.9
+		},
+		"goat-ibexalp-*-adult": {
+			"x": 0.9,
+			"y": 0.9
+		},
+		"goat-ibexnub-*-adult": {
+			"x": 0.8,
+			"y": 0.7
+		},
+		"goat-markhor-*-adult": {
+			"x": 0.9,
+			"y": 0.9
+		},
+		"goat-mountain-*-adult": {
+			"x": 0.9,
+			"y": 1.0
+		},
+		"goat-muskox-*-adult": {
+			"x": 1.4,
+			"y": 1.4
+		},
+		"goat-nubian-*-adult": {
+			"x": 0.8,
+			"y": 0.8
+		},
+		"goat-sirohi-*-adult": {
+			"x": 0.9,
+			"y": 0.9
+		},
+		"goat-takingold-*-adult": {
+			"x": 1.2,
+			"y": 1.3
+		},
+		"goat-turdag-*-adult": {
+			"x": 0.9,
+			"y": 0.9
+		},
+		"goat-valais-*-adult": {
+			"x": 0.8,
+			"y": 0.9
+		},
+		"*": {
+			"x": 0.7,
+			"y": 0.7
+		}
 	},
 	"deadhitBoxSizeByType": {
-		"goat-angora-*-adult": { "x": 0.8,"y": 0.5},
-		"goat-ibexalp-*-adult": { "x": 0.9,"y": 0.5},
-		"goat-ibexnub-*-adult": { "x": 0.8,"y": 0.4},
-		"goat-markhor-*-adult": { "x": 0.9,"y": 0.5},
-		"goat-mountain-*-adult": { "x": 0.9,"y": 0.5},
-		"goat-muskox-*-adult": { "x": 1.4,"y": 0.7},
-		"goat-nubian-*-adult": { "x": 0.8,"y": 0.4},
-		"goat-sirohi-*-adult": { "x": 0.9,"y": 0.5},
-		"goat-takingold-*-adult": { "x": 1.2,"y": 0.6},
-		"goat-turdag-*-adult": { "x": 0.9,"y": 0.5},
-		"goat-valais-*-adult": { "x": 0.8,"y": 0.5},
-		"*": { "x": 0.7,"y": 0.3}
+		"goat-angora-*-adult": {
+			"x": 0.8,
+			"y": 0.5
+		},
+		"goat-ibexalp-*-adult": {
+			"x": 0.9,
+			"y": 0.5
+		},
+		"goat-ibexnub-*-adult": {
+			"x": 0.8,
+			"y": 0.4
+		},
+		"goat-markhor-*-adult": {
+			"x": 0.9,
+			"y": 0.5
+		},
+		"goat-mountain-*-adult": {
+			"x": 0.9,
+			"y": 0.5
+		},
+		"goat-muskox-*-adult": {
+			"x": 1.4,
+			"y": 0.7
+		},
+		"goat-nubian-*-adult": {
+			"x": 0.8,
+			"y": 0.4
+		},
+		"goat-sirohi-*-adult": {
+			"x": 0.9,
+			"y": 0.5
+		},
+		"goat-takingold-*-adult": {
+			"x": 1.2,
+			"y": 0.6
+		},
+		"goat-turdag-*-adult": {
+			"x": 0.9,
+			"y": 0.5
+		},
+		"goat-valais-*-adult": {
+			"x": 0.8,
+			"y": 0.5
+		},
+		"*": {
+			"x": 0.7,
+			"y": 0.3
+		}
 	},
 	"eyeHeightByType": {
 		"goat-angora-*-adult": 0.8,
@@ -53,12 +134,18 @@
 	"attributes": {
 		"killedByInfoText": "deadcreature-killed",
 		"basketCatchable": true,
-		"trapChanceByType": { "*-baby": 0.5, "*": 0.0 },
-		"trapDestroyChanceByType": { "*-baby": 0.05, "*": 0.1 },
-		creatureDiet: {
-			foodCategories: ["Vegetable", "Grain"],
-			foodTags: ["nibbleCrop", "grass", "fruitmash"],
-			skipFoodTags: ["rice", "parsnip"]
+		"trapChanceByType": {
+			"*-baby": 0.5,
+			"*": 0.0
+		},
+		"trapDestroyChanceByType": {
+			"*-baby": 0.05,
+			"*": 0.1
+		},
+		"creatureDiet": {
+			"foodCategories": [ "Vegetable", "Grain" ],
+			"foodTags": [ "nibbleCrop", "grass", "fruitmash" ],
+			"skipFoodTags": [ "rice", "parsnip" ]
 		},
 		"handbook": {
 			"groupcode": "creaturegroup-goat"
@@ -85,12 +172,20 @@
 			"*": { "base": "entity/land/hooved/goat/baby1" }
 		},
 		"texturesByType": {
-			"goat-angora-*-adult": { "hide": { "base": "entity/hooved/goat/angora-adult" }, "hair1": { "base": "entity/hooved/goat/angora-adult" }, "hair2": { "base": "block/transparent" }, "hair3": { "base": "block/transparent" }},
-			"goat-mountain-*-adult": { "hide": { "base": "entity/hooved/goat/mountain-adult" }, "wintercoat": { "base": "entity/hooved/goat/mountain-wintercoat" }}
+			"goat-angora-*-adult": {
+				"hide": { "base": "entity/hooved/goat/angora-adult" },
+				"hair1": { "base": "entity/hooved/goat/angora-adult" },
+				"hair2": { "base": "block/transparent" },
+				"hair3": { "base": "block/transparent" }
+			},
+			"goat-mountain-*-adult": {
+				"hide": { "base": "entity/hooved/goat/mountain-adult" },
+				"wintercoat": { "base": "entity/hooved/goat/mountain-wintercoat" }
+			}
 		},
 		"textureByType": {
 			"goat-angora-*-baby": { "base": "entity/hooved/goat/mountain-baby" },
-			"*": { "base": "entity/hooved/goat/{type}-{age}" }    
+			"*": { "base": "entity/hooved/goat/{type}-{age}" }
 		},
 		"sizeByType": {
 			"*-male-adult": 1.05,
@@ -98,15 +193,44 @@
 		},
 		"behaviors": [
 			{ "code": "repulseagents" },
-			{ "code": "controlledphysics", "stepHeight": 3.1251 },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 3.1251
+			},
 			{ "code": "interpolateposition" },
-			{ "code": "floatupwhenstuck", "onlyWhenDead": true },
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
 			{ "code": "harvestable" },
-			{ "code": "multiply", "enabledByType": { "*-female-adult": true, "*": false } },
-			{ "code": "milkable", "enabledByType": { "*-female-adult": true, "*": false } },
-			{ "code": "despawn", "minPlayerDistance": 16, "belowLightLevel": 8, "minSeconds": 300 },
-			{ "code": "antlergrowth", "enabledByType": { "*-male-adult": true, "*": false } }
-			],
+			{
+				"code": "multiply",
+				"enabledByType": {
+					"*-female-adult": true,
+					"*": false
+				}
+			},
+			{
+				"code": "milkable",
+				"enabledByType": {
+					"*-female-adult": true,
+					"*": false
+				}
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 16,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "antlergrowth",
+				"enabledByType": {
+					"*-male-adult": true,
+					"*": false
+				}
+			}
+		],
 		"animations": [
 			{
 				"code": "attack",
@@ -205,7 +329,7 @@
 				"animation": "Gallop",
 				"supressDefaultAnimation": true,
 				"blendMode": "AddAverage"
-			}	
+			}
 		]
 	},
 	"server": {
@@ -297,7 +421,7 @@
 							},
 							"goat-takinold-*-adult": {
 								"avg": 1.0,
-								"var": 0.0	
+								"var": 0.0
 							},
 							"*": {
 								"avg": 0,
@@ -308,46 +432,46 @@
 					{
 						"type": "item",
 						"code": "hide-raw-medium",
-							"goat-angora-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"goat-ibexalp-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"goat-ibexnub-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"goat-markhor-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"goat-mountain-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"goat-nubian-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"goat-sirohi-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"goat-turdag-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"goat-valais-*-adult": {
-								"avg": 1.7,
-								"var": 0.0
-							},
-							"*": {
-								"avg": 0,
-								"var": 0
-							}
+						"goat-angora-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"goat-ibexalp-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"goat-ibexnub-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"goat-markhor-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"goat-mountain-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"goat-nubian-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"goat-sirohi-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"goat-turdag-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"goat-valais-*-adult": {
+							"avg": 1.7,
+							"var": 0.0
+						},
+						"*": {
+							"avg": 0,
+							"var": 0
+						}
 					},
 					{
 						"type": "item",
@@ -427,7 +551,10 @@
 					"*": false
 				},
 				"spawnEntityCodesByType": {
-				"*-female-adult": [ { "code":"goat-{type}-male-baby"}, {"code": "goat-{type}-female-baby"} ]
+					"*-female-adult": [
+						{ "code": "goat-{type}-male-baby" },
+						{ "code": "goat-{type}-female-baby" }
+					]
 				},
 				"requiresNearbyEntityCodeByType": {
 					"*-female-adult": "goat-{type}-male-adult"
@@ -436,22 +563,28 @@
 				"spawnQuantityMin": 1,
 				"spawnQuantityMax": 1,
 				"eatAnyway": true,
-				"pregnancyDays": 20,
+				"pregnancyDays": 7,
 				"multiplyCooldownDaysMin": 4,
 				"multiplyCooldownDaysMax": 11,
 				"portionsEatenForMultiply": 10
-			}, 
-			{ "code": "milkable", "enabledByType": { "*-female-adult": true, "*": false } },
-			{ 
-				"code": "grow", 
+			},
+			{
+				"code": "milkable",
+				"enabledByType": {
+					"*-female-adult": true,
+					"*": false
+				}
+			},
+			{
+				"code": "grow",
 				"enabledByType": {
 					"*-baby": true,
 					"*-adult": false
 				},
-				"hoursToGrow": 336,
+				"hoursToGrow": 168,
 				"adultEntityCodesByType": {
-					"*-male-baby": ["goat-{type}-male-adult"],
-					"*-female-baby": ["goat-{type}-female-adult"]
+					"*-male-baby": [ "goat-{type}-male-adult" ],
+					"*-female-baby": [ "goat-{type}-female-adult" ]
 				}
 			},
 			{
@@ -785,19 +918,22 @@
 			},
 			{
 				"code": "antlergrowth",
-				"enabledByType": { "*-adult": true, "*": false },
+				"enabledByType": {
+					"*-adult": true,
+					"*": false
+				},
 				"variantsByType": {
-					"goat-angora-*": ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
-					"goat-ibexalp-*": ["01", "02", "03", "04", "05", "06", "07"],
-					"goat-ibexnub-*": ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
-					"goat-markhor-*": ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
-					"goat-mountain-*": ["01", "02", "03", "04", "05", "06"],
-					"goat-muskox-*": ["01", "02", "03", "04", "05"],
-					"goat-nubian-*": ["01", "02", "03", "04"],
-					"goat-sirohi-*": ["01", "02", "03", "04"],
-					"goat-takingold-*": ["01", "02", "03", "04", "05"],
-					"goat-turdag-*": ["01", "02", "03", "04", "05", "06", "07"],
-					"goat-valais-*": ["01", "02", "03", "04", "05", "06", "07", "08"]
+					"goat-angora-*": [ "01", "02", "03", "04", "05", "06", "07", "08", "09" ],
+					"goat-ibexalp-*": [ "01", "02", "03", "04", "05", "06", "07" ],
+					"goat-ibexnub-*": [ "01", "02", "03", "04", "05", "06", "07", "08", "09" ],
+					"goat-markhor-*": [ "01", "02", "03", "04", "05", "06", "07", "08", "09" ],
+					"goat-mountain-*": [ "01", "02", "03", "04", "05", "06" ],
+					"goat-muskox-*": [ "01", "02", "03", "04", "05" ],
+					"goat-nubian-*": [ "01", "02", "03", "04" ],
+					"goat-sirohi-*": [ "01", "02", "03", "04" ],
+					"goat-takingold-*": [ "01", "02", "03", "04", "05" ],
+					"goat-turdag-*": [ "01", "02", "03", "04", "05", "06", "07" ],
+					"goat-valais-*": [ "01", "02", "03", "04", "05", "06", "07", "08" ]
 				},
 				"c1": "Disables the yearly interval of growing and shedding and uses the growDurationMonths value instead to grow the antlers once",
 				"beginGrowMonth": -1,
@@ -806,13 +942,19 @@
 		],
 		"spawnconditions": {
 			"worldgen": {
-				"triesPerChunk": { "avg": 0, "var": 0 },
+				"triesPerChunk": {
+					"avg": 0,
+					"var": 0
+				},
 				"tryOnlySurface": true,
-				"groupSize": { "avg": 2, "var": 3 },
+				"groupSize": {
+					"avg": 2,
+					"var": 3
+				},
 				"insideBlockCodes": [ "air", "tallgrass-*", "snowlayer-1" ],
 				"companionsByType": {
-					"goat-*-male-adult": ["goat-{type}-female-adult"],
-					"goat-*-female-adult": ["goat-{type}-female-baby", "goat-{type}-male-baby"]
+					"goat-*-male-adult": [ "goat-{type}-female-adult" ],
+					"goat-*-female-adult": [ "goat-{type}-female-baby", "goat-{type}-male-baby" ]
 				}
 			},
 			"runtime": {
@@ -821,11 +963,14 @@
 				"tryOnlySurface": true,
 				"chance": 0.005,
 				"minLightLevel": 10,
-				"groupSize": { "avg": 2.0, "var": 3.0 },
+				"groupSize": {
+					"avg": 2.0,
+					"var": 3.0
+				},
 				"insideBlockCodes": [ "air", "tallgrass-*", "snowlayer-1" ],
 				"companionsByType": {
-					"goat-*-male-adult": ["goat-{type}-female-adult"],
-					"goat-*-female-adult": ["goat-{type}-female-baby", "goat-{type}-male-baby"]
+					"goat-*-male-adult": [ "goat-{type}-female-adult" ],
+					"goat-*-female-adult": [ "goat-{type}-female-baby", "goat-{type}-male-baby" ]
 				}
 			}
 		},
@@ -840,13 +985,19 @@
 					"maxForest": 0.4,
 					"maxShrubs": 0.8,
 					"minY": 1.4,
-					"maxY": 1.8					
+					"maxY": 1.8
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.05, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.05,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-ibexalp-*-adult": {
@@ -859,13 +1010,19 @@
 					"maxForest": 0.2,
 					"maxShrubs": 0.8,
 					"minY": 1.4,
-					"maxY": 1.9					
+					"maxY": 1.9
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.05, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.05,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-ibexnub-*-adult": {
@@ -878,13 +1035,19 @@
 					"maxForest": 0.1,
 					"maxShrubs": 0.8,
 					"minY": 1.1,
-					"maxY": 1.4					
+					"maxY": 1.4
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.02, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.02,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-markhor-*-adult": {
@@ -897,13 +1060,19 @@
 					"maxForest": 0.3,
 					"maxShrubs": 0.8,
 					"minY": 1.4,
-					"maxY": 1.9					
+					"maxY": 1.9
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.04, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.04,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-mountain-*-adult": {
@@ -916,13 +1085,19 @@
 					"maxForest": 0.2,
 					"maxShrubs": 0.8,
 					"minY": 1.5,
-					"maxY": 1.99					
+					"maxY": 1.99
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.05, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.05,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-muskox-*-adult": {
@@ -935,13 +1110,19 @@
 					"maxForest": 0.4,
 					"maxShrubs": 0.8,
 					"minY": 0.9,
-					"maxY": 1.2					
+					"maxY": 1.2
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.003, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.003,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-nubian-*-adult": {
@@ -954,13 +1135,19 @@
 					"maxForest": 0.4,
 					"maxShrubs": 0.8,
 					"minY": 1.0,
-					"maxY": 1.4					
+					"maxY": 1.4
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.004, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.004,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-sirohi-*-adult": {
@@ -973,13 +1160,19 @@
 					"maxForest": 0.5,
 					"maxShrubs": 0.8,
 					"minY": 0.9,
-					"maxY": 1.3					
+					"maxY": 1.3
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.004, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.004,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-takingold-*-adult": {
@@ -992,13 +1185,19 @@
 					"maxForest": 0.4,
 					"maxShrubs": 0.8,
 					"minY": 1.4,
-					"maxY": 1.8					
+					"maxY": 1.8
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.05, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.05,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-turdag-*-adult": {
@@ -1011,13 +1210,19 @@
 					"maxForest": 0.3,
 					"maxShrubs": 0.8,
 					"minY": 1.4,
-					"maxY": 1.9					
+					"maxY": 1.9
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.05, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.05,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			},
 			"goat-valais-*-adult": {
@@ -1030,28 +1235,34 @@
 					"maxForest": 0.4,
 					"maxShrubs": 0.8,
 					"minY": 1.1,
-					"maxY": 1.5					
+					"maxY": 1.5
 				},
 				"worldgen": {
-					"triesPerChunk": { "avg": 0.02, "var": 0 }
+					"triesPerChunk": {
+						"avg": 0.02,
+						"var": 0
+					}
 				},
 				"runtime": {
-					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+					"maxQuantityByGroup": {
+						"code": "goat-*",
+						"maxQuantity": 4
+					}
 				}
 			}
 		}
 	},
 	"soundsByType": {
-		"*-adult":{
+		"*-adult": {
 			"hurt": "creature/goat/hurt*",
 			"death": "creature/goat/death*",
 			"idle": "creature/goat/bleat*"
 		},
-		"*-baby":{
+		"*-baby": {
 			"hurt": "creature/goat/goatkidhurt1*",
 			"death": "creature/goat/goatkidbleat*",
 			"idle": "creature/goat/goatkidbleat*"
 		}
 	},
 	"idleSoundChance": 0.1
-}
+}}
