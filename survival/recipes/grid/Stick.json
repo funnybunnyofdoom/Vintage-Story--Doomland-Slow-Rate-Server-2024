@@ -1,0 +1,38 @@
+[
+	{
+		ingredientPattern: "AHL",
+		ingredients: {
+			"A": { type: "item", code: "axe-*", isTool: true  },
+			"H": { type: "item", code: "hammer-*", isTool: true  },
+			"L": { type: "block", code: "log-*", allowedVariants: ["placed-birch-ud", "placed-oak-ud", "placed-maple-ud", "placed-pine-ud", "placed-acacia-ud", "placed-redwood-ud", "placed-larch-ud", "placed-baldcypress-ud", "placed-walnut-ud"] }
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "stick", quantity: 8  }
+	},
+	{
+		ingredientPattern: "AHL",
+		ingredients: {
+			"A": { type: "item", code: "axe-*", isTool: true  },
+			"H": { type: "item", code: "hammer-*", isTool: true  },
+			"L": { type: "block", code: "logsection-placed-*" }
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "stick", quantity: 8  }
+	},
+
+	{
+		ingredientPattern: "AHL",
+		ingredients: {
+			"A": { type: "item", code: "axe-*", isTool: true  },
+			"H": { type: "item", code: "hammer-*", isTool: true  },
+			"L": { type: "block", code: "log-*", allowedVariants: ["placed-kapok-ud", "placed-purpleheart-ud", "placed-ebony-ud"] }
+		},
+		recipeGroup: 1,
+		width: 1,
+		height: 3,
+		name: "Kapok Firewood",
+		output: { type: "item", code: "stick", quantity: 6  }
+	}
+]

@@ -1,0 +1,596 @@
+{
+	"code": "deer",
+	"class": "EntityAgent",
+	"variantgroups": [
+		{ "code": "type", "states": ["moose" ] },
+		{ "code": "gender", "states": ["male", "female"] },
+		{ "code": "age", "states": ["adult", "baby"] }
+	],
+	"hitBoxSizeByType": {
+		"*-adult": {	"x": 1.1,"y": 1.9},
+		"*-baby": {	"x": 0.8,"y": 1.1}
+	},
+	"deadhitBoxSizeByType": {
+		"*-adult": {	"x": 1.5,"y": 0.6},
+		"*-baby": {	"x": 1.0,"y": 0.4}
+	},
+	"eyeHeightByType": {
+		"*-adult": 1.8,
+		"*-baby": 1.4
+	},
+	"fallDamageMultiplier": 0.635,
+	"drops": [],
+	"attributes": {
+		basketCatchable: true,
+		trapChance: 0.0,
+		trapDestroyChance: 0.3,
+		"killedByInfoText": "deadcreature-killed",
+		creatureDiet: {
+			foodCategories: ["Vegetable", "Grain"],
+			foodTags: ["nibbleCrop"],
+			skipFoodTags: ["rice", "parsnip"]
+		},
+		"handbook": {
+			"groupcode": "creaturegroup-moose"
+		}
+	},
+	"client": {
+		"renderer": "Shape",
+		"shapeByType": {
+			"*-baby": { "base": "entity/land/hooved/deer/moose/baby" },
+			"*": { "base": "entity/land/hooved/deer/moose/adult" }
+		},
+		"textureByType": {
+			"*-baby": { "base": "entity/hooved/deer/moose-baby" },
+			"*": { "base": "entity/hooved/deer/moose-adult" }
+		},    
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{ "code": "controlledphysics", "stepHeight": 2.1251 },
+			{ "code": "interpolateposition" },
+			{ "code": "floatupwhenstuck", "onlyWhenDead": true },
+			{ "code": "harvestable" },
+			{ "code": "despawn", "minPlayerDistance": 16, "belowLightLevel": 8, "minSeconds": 300 },
+			{ "code": "antlergrowth", "enabledByType": { "deer-moose-male-adult": true, "*": false } }
+		],
+		"animations": [
+			{
+				"code": "attack",
+				"animation": "Attack",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "charge",
+				"animation": "Charge",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "roar",
+				"animation": "Roar",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "hurt",
+				"animation": "Hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "Die",
+				"easeInSpeed": 3,
+				"animationSpeed": 0.8,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "Idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "Sleep",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "sit",
+				"animation": "Sit",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "eat",
+				"animation": "Eat",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "swim",
+				"animation": "Swim",
+				"supressDefaultAnimation": true,
+				"blendMode": "Average"
+			},
+			{
+				"code": "walk",
+				"animation": "Walk",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "run",
+				"animation": "Run",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "stot",
+				"animation": "Stot",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "gallop",
+				"animation": "Gallop",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			}	
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 90,
+				"maxTurnAnglePerSec": 180
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 2.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealthByType": {
+					"*-adult": 21,
+					"*-baby": 6
+				},
+				"maxhealthByType": {
+					"*-adult": 21,
+					"*-baby": 6
+				}
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlockByType": {
+					"*-adult": "carcass-medium",
+					"*": "carcass-small"
+				}
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "redmeat-raw",
+						"quantityByType": {
+							"*-adult": {
+								"avg": 13,
+								"var": 3
+							},
+							"*-baby": {
+								"avg": 2,
+								"var": 1
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-large",
+						"quantityByType": {
+							"*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"*-baby": {"avg": 0, "var": 0}
+							}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-small",
+						"quantityByType": {
+							"*-baby": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"*-adult": {"avg": 0, "var": 0}
+						}
+					},
+					{
+						"type": "item",
+						"code": "fat",
+						"quantityByType": {
+							"*-adult": {
+								"avg": 2,
+								"var": 0.3
+							},
+							"*-baby": {"avg": 0, "var": 0}
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "aggressiveondamage",
+						"duration": 15,
+						"chance": 0.6,
+						"slot": 0,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "fleeondamage",
+						"duration": 10,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "saturated",
+						"duration": 1200,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "sum"
+					}
+				]
+			},
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"duration": 60,
+						"chanceByType": {
+							"*-baby": 1.0,
+							"*": 0.90
+						},
+						"slot": 0,
+						"priority": 5,
+						"accumType": "max",
+						"whenHealthRelBelow": 0.4
+					},
+					{
+						"code": "aggressiveondamage",
+						"duration": 300,
+						"chanceByType": {
+							"*-adult": 0.10
+						},
+						"slot": 0,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "saturated",
+						"duration": 1200,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "sum"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"animation": "Attack",
+						"enabledByType": {
+							"*-male-adult": true,
+							"*": false
+						},
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "bear-*", "hyena-male", "hyena-female", "fox-male", "fox-female" ],
+						"priority": 3,
+						"damageByType": {
+							"*-male-adult": 12,
+							"*-female-adult": 9,
+							"*-baby": 0.1
+						},
+						"damageTier": 2,
+						"damageType": "SlashingAttack",
+						"slot": 1,
+						"mincooldown": 1500,
+						"maxcooldown": 2500,
+						"attackDurationMs": 1250,
+						"damagePlayerAtMs": 500,
+						"animationSpeed": 2.5,
+						"sound": "creature/hooved/generic/sniff*",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "fleeentity",
+						"animation": "Run",
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"priority": 1.51,
+						"movespeedByType": {
+							"*-adult": 0.04,
+							"*-baby": 0.01
+						},
+						"seekingRange": 14,
+						"animationSpeed": 2,
+						"sound": "creature/hooved/generic/sniff*"
+					},
+					{
+						"code": "seekentity",
+						"animation": "Charge",
+						"enabledByType": {
+							"*-male-adult": true,
+							"*": false
+						},
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"priority": 1.6,
+						"mincooldown": 600,
+						"maxcooldown": 650,
+						"movespeed": 0.036,
+						"seekingRange": 20,
+						"animationSpeed": 1,
+						"sound": "creature/hooved/generic/sniff*",
+						"whenNotInEmotionState": "fleeondamage"
+					},
+					{
+						"code": "stayclosetoentity",
+						"animation": "Run",
+						"enabledByType": {
+							"*-baby": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCodeByType": {
+							"*-baby": "*-adult"
+						},
+						"movespeed": 0.05,
+						"animationSpeed": 3,
+						"maxDistance": 5,
+						"searchRange": 25
+					},
+					{
+						"code": "getoutofwater",
+						"animation": "Swim",
+						"priority": 1.4,
+						"movespeedByType": {
+							"*-adult": 0.085,
+							"*-baby": 0.0045
+						},
+						"animationSpeedByType": {
+							"*-adult": 1,
+							"*-baby": 0.8
+						}
+					},
+					{
+						"code": "idle",
+						"animation": "Idle",
+						"priority": 0.9,
+						"minduration": 6000,
+						"maxduration": 45000,
+						"mincooldown": 6000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.28,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 10,
+						"stopOnHurt": true,
+						"soundByType": {
+							"*-adult": "creature/hooved/generic/sniff*"
+						}
+					},
+					{
+						"code": "idle",
+						"animation": "Sleep",
+						"priority": 1.38,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"priorityForCancel": 1.38,
+						"whenNotInEmotionState": "aggressiveondamage",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 18,
+								"toHour": 10
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 8,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"animation": "Sit",
+						"priority": 0.9,
+						"minduration": 6000,
+						"maxduration": 45000,
+						"mincooldown": 6000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.28,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 10,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"animation": "Roar",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"minduration": 4667,
+						"maxduration": 4667,
+						"chance": 0.1,
+						"mincooldown": 8000,
+						"maxcooldown": 50000,
+						"animationSpeed": 1.0,
+						"soundByType": {
+							"*-adult": "creature/hooved/generic/sniff*",
+							"*-baby": "creature/hooved/generic/sniff*"
+						},
+						"soundRangeByType": {
+							"*-adult": 80
+						}
+					},
+					{
+						"code": "idle",
+						"animation": "Eat",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"minduration": 2667,
+						"maxduration": 2667,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animationSpeed": 1.5
+					},
+					{
+						"code": "wander",
+						"animation": "Walk",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeedByType": {
+							"*-adult": 0.015,
+							"*-baby": 0.0055
+						},
+						"animationSpeedByType": {
+							"*-adult": 0.8,
+							"*-baby": 0.6						
+						},
+						"preferredLightLevel": 12
+					},
+					{
+						"code": "seekfoodandeat",
+						"movespeedByType": {
+							"*-adult": 0.015,
+							"*-baby": 0.0055
+						},
+						"priority": 1.25,
+						"eatSound": "creature/animal-eat-small",
+						"eatTime": 1.5,
+						"eatLooseItems": true,
+						"animationSpeed": 1.5,
+						"animation": "Walk",
+						"eatAnimation": "Eat",
+						"mincooldownHours": 1,
+						"maxcooldownHours": 4
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			},
+			{
+				"code": "pettable",
+				"minGeneration": 4
+			},
+			{
+				"code": "antlergrowth",
+				"enabledByType": { "deer-moose-male-adult": true, "*": false },
+				"variants": ["01", "02", "03", "04", "05", "06", "07", "08"],
+				"beginGrowMonth": 10,
+				
+				"c1": "Amount of months until full growth. Must be less than 9 months (including grown and she duration)",
+				"growDurationMonths": 3,
+				
+				"c2": "Amount of months the antler can be at full growth until shedding",
+				"grownDurationMonths": 1,
+				
+				"c3": "Amount of months the antler can shed. Higher values allows players to find them for longers. A value of 0 will make antlers never drop",
+				"shedDurationMonths": 0.5
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"triesPerChunk": { "avg": 0, "var": 0 },
+				"tryOnlySurface": true,
+				"groupSize": { "dist": "verynarrowgaussian", "avg": 2, "var": 3 },
+				"insideBlockCodes": ["air", "tallgrass-*", "snowlayer-1"],
+				"companions": ["moose-female-adult", "moose-female-baby", "moose-male-baby"]
+			},
+			"runtime": {
+				"group": "neutral",
+				"maxQuantity": 0,
+				"tryOnlySurface": true,
+				"chance": 0.005,
+				"minLightLevel": 10,
+				"groupSize": { "dist": "invexp", "avg": 2.0, "var": 3.0 },
+				"insideBlockCodes": [ "air", "soil-*","gravel-*", "tallgrass-*", "snowlayer-1", "sand-*"],
+				"companions": ["moose-female-adult", "moose-female-baby", "moose-male-baby"]
+			}
+		},
+		"spawnconditionsByType": {
+			"*-male-adult": {
+				"climate": {
+					"minTemp": -19,
+					"maxTemp": -2,
+					"minRain": 0.35,
+					"minForestOrShrubs": 0.35,
+					"maxForest": 0.95,
+					"maxShrubs": 0.95,
+					"minY": 0.9,
+					"maxY": 1.5					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantity": 1
+				}
+			}
+		}
+	},
+	"soundsByType": {
+		"deer-moose-*-adult":{
+			"hurt": "creature/hooved/large/redstag/roar*",
+			"death": "creature/hooved/large/elk/bugle*",
+			"idle": "creature/hooved/large/redstag/bellow*"
+		},
+		"deer-moose-*-baby":{
+			"hurt": "creature/hooved/small/fawn/fawn*",
+			"death": "creature/hooved/small/fawn/fawn*",
+			"idle": "creature/hooved/small/strange/mew*"
+		}
+	},
+	"idleSoundChance": 0.05
+}

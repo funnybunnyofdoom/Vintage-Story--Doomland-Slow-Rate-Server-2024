@@ -1,0 +1,1057 @@
+{
+	"code": "goat",
+	"class": "EntityAgent",
+	"variantgroups": [
+		{ "code": "type", "states": ["angora", "ibexalp", "ibexnub", "markhor", "mountain", "muskox", "nubian", "sirohi", "takingold", "turdag", "valais" ] },
+		{ "code": "gender", "states": ["male", "female"] },
+		{ "code": "age", "states": ["adult", "baby"] }
+	],
+	"hitBoxSizeByType": {
+		"goat-angora-*-adult": { "x": 0.8,"y": 0.9},
+		"goat-ibexalp-*-adult": { "x": 0.9,"y": 0.9},
+		"goat-ibexnub-*-adult": { "x": 0.8,"y": 0.7},
+		"goat-markhor-*-adult": { "x": 0.9,"y": 0.9},
+		"goat-mountain-*-adult": { "x": 0.9,"y": 1.0},
+		"goat-muskox-*-adult": { "x": 1.4,"y": 1.4},
+		"goat-nubian-*-adult": { "x": 0.8,"y": 0.8},
+		"goat-sirohi-*-adult": { "x": 0.9,"y": 0.9},
+		"goat-takingold-*-adult": { "x": 1.2,"y": 1.3},
+		"goat-turdag-*-adult": { "x": 0.9,"y": 0.9},
+		"goat-valais-*-adult": { "x": 0.8,"y": 0.9},
+		"*": { "x": 0.7,"y": 0.7}
+	},
+	"deadhitBoxSizeByType": {
+		"goat-angora-*-adult": { "x": 0.8,"y": 0.5},
+		"goat-ibexalp-*-adult": { "x": 0.9,"y": 0.5},
+		"goat-ibexnub-*-adult": { "x": 0.8,"y": 0.4},
+		"goat-markhor-*-adult": { "x": 0.9,"y": 0.5},
+		"goat-mountain-*-adult": { "x": 0.9,"y": 0.5},
+		"goat-muskox-*-adult": { "x": 1.4,"y": 0.7},
+		"goat-nubian-*-adult": { "x": 0.8,"y": 0.4},
+		"goat-sirohi-*-adult": { "x": 0.9,"y": 0.5},
+		"goat-takingold-*-adult": { "x": 1.2,"y": 0.6},
+		"goat-turdag-*-adult": { "x": 0.9,"y": 0.5},
+		"goat-valais-*-adult": { "x": 0.8,"y": 0.5},
+		"*": { "x": 0.7,"y": 0.3}
+	},
+	"eyeHeightByType": {
+		"goat-angora-*-adult": 0.8,
+		"goat-ibexalp-*-adult": 0.8,
+		"goat-ibexnub-*-adult": 0.8,
+		"goat-markhor-*-adult": 0.8,
+		"goat-mountain-*-adult": 0.9,
+		"goat-muskox-*-adult": 1.2,
+		"goat-nubian-*-adult": 0.7,
+		"goat-sirohi-*-adult": 0.8,
+		"goat-takingold-*-adult": 1.1,
+		"goat-turdag-*-adult": 0.8,
+		"goat-valais-*-adult": 0.8,
+		"*": 0.6
+	},
+	"fallDamageMultiplier": 0.4,
+	"drops": [],
+	"attributes": {
+		"killedByInfoText": "deadcreature-killed",
+		"basketCatchable": true,
+		"trapChanceByType": { "*-baby": 0.5, "*": 0.0 },
+		"trapDestroyChanceByType": { "*-baby": 0.05, "*": 0.1 },
+		creatureDiet: {
+			foodCategories: ["Vegetable", "Grain"],
+			foodTags: ["nibbleCrop", "grass", "fruitmash"],
+			skipFoodTags: ["rice", "parsnip"]
+		},
+		"handbook": {
+			"groupcode": "creaturegroup-goat"
+		}
+	},
+	"client": {
+		"renderer": "Shape",
+		"shapeByType": {
+			"goat-angora-*-adult": { "base": "entity/land/hooved/goat/angora/adult" },
+			"goat-ibexalp-*-adult": { "base": "entity/land/hooved/goat/ibexalp/adult" },
+			"goat-ibexnub-*-adult": { "base": "entity/land/hooved/goat/ibexnub/adult" },
+			"goat-markhor-*-adult": { "base": "entity/land/hooved/goat/markhor/adult" },
+			"goat-mountain-*-adult": { "base": "entity/land/hooved/goat/mountain/adult" },
+			"goat-muskox-*-adult": { "base": "entity/land/hooved/goat/muskox/adult" },
+			"goat-muskox-*-baby": { "base": "entity/land/hooved/goat/muskox/baby" },
+			"goat-nubian-*-adult": { "base": "entity/land/hooved/goat/nubian/adult" },
+			"goat-nubian-*-baby": { "base": "entity/land/hooved/goat/baby2" },
+			"goat-sirohi-*-adult": { "base": "entity/land/hooved/goat/sirohi/adult" },
+			"goat-sirohi-*-baby": { "base": "entity/land/hooved/goat/baby2" },
+			"goat-takingold-*-adult": { "base": "entity/land/hooved/goat/takingold/adult" },
+			"goat-takingold-*-baby": { "base": "entity/land/hooved/goat/takingold/baby" },
+			"goat-turdag-*-adult": { "base": "entity/land/hooved/goat/ibexalp/adult" },
+			"goat-valais-*-adult": { "base": "entity/land/hooved/goat/valais/adult" },
+			"*": { "base": "entity/land/hooved/goat/baby1" }
+		},
+		"texturesByType": {
+			"goat-angora-*-adult": { "hide": { "base": "entity/hooved/goat/angora-adult" }, "hair1": { "base": "entity/hooved/goat/angora-adult" }, "hair2": { "base": "block/transparent" }, "hair3": { "base": "block/transparent" }},
+			"goat-mountain-*-adult": { "hide": { "base": "entity/hooved/goat/mountain-adult" }, "wintercoat": { "base": "entity/hooved/goat/mountain-wintercoat" }}
+		},
+		"textureByType": {
+			"goat-angora-*-baby": { "base": "entity/hooved/goat/mountain-baby" },
+			"*": { "base": "entity/hooved/goat/{type}-{age}" }    
+		},
+		"sizeByType": {
+			"*-male-adult": 1.05,
+			"*-female-adult": 0.95
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{ "code": "controlledphysics", "stepHeight": 3.1251 },
+			{ "code": "interpolateposition" },
+			{ "code": "floatupwhenstuck", "onlyWhenDead": true },
+			{ "code": "harvestable" },
+			{ "code": "multiply", "enabledByType": { "*-female-adult": true, "*": false } },
+			{ "code": "milkable", "enabledByType": { "*-female-adult": true, "*": false } },
+			{ "code": "despawn", "minPlayerDistance": 16, "belowLightLevel": 8, "minSeconds": 300 },
+			{ "code": "antlergrowth", "enabledByType": { "*-male-adult": true, "*": false } }
+			],
+		"animations": [
+			{
+				"code": "attack",
+				"animation": "Attack",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "charge",
+				"animation": "Charge",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "roar",
+				"animation": "Roar",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "hurt",
+				"animation": "Hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "Die",
+				"easeInSpeed": 3,
+				"animationSpeedByType": {
+					"*-adult": 0.8,
+					"*-baby": 1.0
+				},
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "Idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "Sleep",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "sit",
+				"animation": "Sit",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "eat",
+				"animation": "Eat",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "swim",
+				"animation": "Swim",
+				"supressDefaultAnimation": true,
+				"blendMode": "Average"
+			},
+			{
+				"code": "walk",
+				"animation": "Walk",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "run",
+				"animation": "Run",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "stot",
+				"animation": "Stot",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "gallop",
+				"animation": "Gallop",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			}	
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 90,
+				"maxTurnAnglePerSec": 180
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 3.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealthByType": {
+					"goat-markhor-male-adult": 20,
+					"goat-muskox-male-adult": 25,
+					"goat-takingold-male-adult": 25,
+					"goat-turdag-male-adult": 20,
+					"*-male-adult": 19,
+					"*-female-adult": 17,
+					"*-baby": 10
+				},
+				"maxhealthByType": {
+					"goat-markhor-male-adult": 20,
+					"goat-muskox-male-adult": 25,
+					"goat-takingold-male-adult": 25,
+					"goat-turdag-male-adult": 20,
+					"*-male-adult": 19,
+					"*-female-adult": 17,
+					"*-baby": 10
+				}
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlockByType": {
+					"goat-muskox-*-adult": "carcass-large",
+					"goat-takingold-*-adult": "carcass-large",
+					"goat-*-adult": "carcass-medium",
+					"*-baby": "carcass-small"
+				}
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "redmeat-raw",
+						"quantityByType": {
+							"goat-muskox-*-adult": {
+								"avg": 16,
+								"var": 3
+							},
+							"goat-takingold-*-adult": {
+								"avg": 16,
+								"var": 3
+							},
+							"*-adult": {
+								"avg": 12,
+								"var": 3
+							},
+							"*-baby": {
+								"avg": 2,
+								"var": 1
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-large",
+						"quantityByType": {
+							"goat-muskox-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-takinold-*-adult": {
+								"avg": 1.0,
+								"var": 0.0	
+							},
+							"*": {
+								"avg": 0,
+								"var": 0
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-medium",
+							"goat-angora-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-ibexalp-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-ibexnub-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-markhor-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-mountain-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-nubian-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-sirohi-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-turdag-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"goat-valais-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"*": {
+								"avg": 0,
+								"var": 0
+							}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-small",
+						"quantityByType": {
+							"*-baby": {
+								"avg": 1,
+								"var": 0.5
+							},
+							"*": {
+								"avg": 0,
+								"var": 0
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "fat",
+						"quantityByType": {
+							"goat-angora-*-adult": {
+								"avg": 1.2,
+								"var": 0.3
+							},
+							"goat-muskox-*-adult": {
+								"avg": 3,
+								"var": 0.3
+							},
+							"goat-takingold-*-adult": {
+								"avg": 1.8,
+								"var": 0.3
+							},
+							"goat-ibexalp-*-adult": {
+								"avg": 1.8,
+								"var": 0.3
+							},
+							"goat-ibexnub-*-adult": {
+								"avg": 1.2,
+								"var": 0.5
+							},
+							"goat-markhor-*-adult": {
+								"avg": 1.8,
+								"var": 0.3
+							},
+							"goat-mountain-*-adult": {
+								"avg": 2.0,
+								"var": 0.3
+							},
+							"goat-nubian-*-adult": {
+								"avg": 1.2,
+								"var": 0.3
+							},
+							"goat-sirohi-*-adult": {
+								"avg": 1.2,
+								"var": 0.3
+							},
+							"goat-turdag-*-adult": {
+								"avg": 1.8,
+								"var": 0.3
+							},
+							"goat-valais-*-adult": {
+								"avg": 1.2,
+								"var": 0.3
+							},
+							"*": {
+								"avg": 0,
+								"var": 0
+							}
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{
+				"code": "multiply",
+				"enabledByType": {
+					"*-female-adult": true,
+					"*": false
+				},
+				"spawnEntityCodesByType": {
+				"*-female-adult": [ { "code":"goat-{type}-male-baby"}, {"code": "goat-{type}-female-baby"} ]
+				},
+				"requiresNearbyEntityCodeByType": {
+					"*-female-adult": "goat-{type}-male-adult"
+				},
+				"requiresNearbyEntityRange": 10,
+				"spawnQuantityMin": 1,
+				"spawnQuantityMax": 1,
+				"eatAnyway": true,
+				"pregnancyDays": 20,
+				"multiplyCooldownDaysMin": 4,
+				"multiplyCooldownDaysMax": 11,
+				"portionsEatenForMultiply": 10
+			}, 
+			{ "code": "milkable", "enabledByType": { "*-female-adult": true, "*": false } },
+			{ 
+				"code": "grow", 
+				"enabledByType": {
+					"*-baby": true,
+					"*-adult": false
+				},
+				"hoursToGrow": 336,
+				"adultEntityCodesByType": {
+					"*-male-baby": ["goat-{type}-male-adult"],
+					"*-female-baby": ["goat-{type}-female-adult"]
+				}
+			},
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"whenHealthRelBelow": 0.4,
+						"duration": 60,
+						"chanceByType": {
+							"*-male-*": 0.95,
+							"*": 1.0
+						},
+						"slot": 0,
+						"priority": 5,
+						"accumType": "max"
+					},
+					{
+						"code": "fleeondamage",
+						"duration": 40,
+						"chanceByType": {
+							"*-male-*": 0.85,
+							"*": 1.0
+						},
+						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "aggressiveondamage",
+						"duration": 30,
+						"chanceByType": {
+							"*-male-*": 0.5,
+							"*": 0.0
+						},
+						"slot": 0,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "saturated",
+						"duration": 1200,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "sum"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"animation": "Attack",
+						"enabledByType": {
+							"*-baby": false,
+							"*-female-*": false,
+							"*": true
+						},
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "bear-*", "hyena-male", "hyena-female", "fox-male", "fox-female" ],
+						"priority": 3,
+						"damageByType": {
+							"goat-angora-male-adult": 7.0,
+							"goat-ibexalp-male-adult": 7.5,
+							"goat-ibexnub-male-adult": 7.5,
+							"goat-markhor-male-adult": 8.0,
+							"goat-mountain-male-adult": 7.5,
+							"goat-muskox-male-adult": 9.5,
+							"goat-nubian-male-adult": 6.0,
+							"goat-sirohi-male-adult": 6.0,
+							"goat-takingold-male-adult": 9.0,
+							"goat-turdag-male-adult": 7.5,
+							"goat-valais-male-adult": 7.0,
+							"*-female-adult": 3.0,
+							"*-baby": 0.6,
+							"*": 7.5
+						},
+						"damageTier": 2,
+						"damageType": "SlashingAttack",
+						"slot": 1,
+						"mincooldown": 1500,
+						"maxcooldown": 2500,
+						"attackDurationMs": 1250,
+						"damagePlayerAtMs": 500,
+						"animationSpeed": 2.5,
+						"sound": "creature/goat/hurt*",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "fleeentity",
+						"animation": "Run",
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"priority": 1.51,
+						"movespeedByType": {
+							"goat-angora-*-adult": 0.06,
+							"goat-ibexalp-*-adult": 0.06,
+							"goat-ibexnub-*-adult": 0.06,
+							"goat-markhor-*-adult": 0.06,
+							"goat-mountain-*-adult": 0.06,
+							"goat-muskox-*-adult": 0.065,
+							"goat-nubian-*-adult": 0.06,
+							"goat-sirohi-*-adult": 0.06,
+							"goat-takingold-*-adult": 0.065,
+							"goat-turdag-*-adult": 0.06,
+							"goat-valais-*-adult": 0.06,
+							"*-baby": 0.04,
+							"*": 0.06
+						},
+						"seekingRange": 14,
+						"animationSpeed": 2,
+						"sound": "creature/goat/bleatweird"
+					},
+					{
+						"code": "seekentity",
+						"animation": "Charge",
+						"enabledByType": {
+							"*-male-adult": true,
+							"*": false
+						},
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female" ],
+						"priority": 1.6,
+						"mincooldown": 600,
+						"maxcooldown": 650,
+						"movespeed": 0.05,
+						"seekingRange": 20,
+						"animationSpeed": 1,
+						"sound": "creature/hooved/generic/sniff*",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "stayclosetoentity",
+						"animation": "Run",
+						"enabledByType": {
+							"*-male-adult": false,
+							"*": true
+						},
+						"priority": 1.4,
+						"entityCodeByType": {
+							"*-female-adult": "goat-{type}-male-adult",
+							"*-baby": "goat-{type}-female-adult"
+						},
+						"movespeedByType": {
+							"goat-angora-*-adult": 0.06,
+							"goat-ibexalp-*-adult": 0.06,
+							"goat-ibexnub-*-adult": 0.06,
+							"goat-markhor-*-adult": 0.06,
+							"goat-mountain-*-adult": 0.06,
+							"goat-muskox-*-adult": 0.065,
+							"goat-nubian-*-adult": 0.06,
+							"goat-sirohi-*-adult": 0.06,
+							"goat-takingold-*-adult": 0.065,
+							"goat-turdag-*-adult": 0.06,
+							"goat-valais-*-adult": 0.06,
+							"*-baby": 0.04,
+							"*": 0.06
+						},
+						"animationSpeed": 2,
+						"maxDistance": 10,
+						"searchRange": 25
+					},
+					{
+						"code": "getoutofwater",
+						"animation": "Swim",
+						"priority": 1.4,
+						"movespeedByType": {
+							"goat-muskox-*-adult": 0.045,
+							"goat-takingold-*-adult": 0.045,
+							"*-adult": 0.04,
+							"*-baby": 0.03
+						},
+						"animationSpeed": 1
+					},
+					{
+						"code": "idle",
+						"animation": "Idle",
+						"priority": 0.9,
+						"minduration": 6000,
+						"maxduration": 45000,
+						"mincooldown": 6000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.28,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 10,
+						"stopOnHurt": true,
+						"sound": "creature/goat/bleat*"
+					},
+					{
+						"code": "idle",
+						"animation": "Sleep",
+						"priority": 1.38,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"priorityForCancel": 1.38,
+						"whenNotInEmotionState": "aggressiveondamage",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 20,
+								"toHour": 4
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 8,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"animation": "Sit",
+						"priority": 0.9,
+						"minduration": 6000,
+						"maxduration": 45000,
+						"mincooldown": 6000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.28,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 10,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"animation": "Roar",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"minduration": 4667,
+						"maxduration": 4667,
+						"chance": 0.05,
+						"mincooldown": 8000,
+						"maxcooldown": 50000,
+						"animationSpeed": 1.0,
+						"soundByType": {
+							"*-adult": "creature/goat/bleatweird"
+						},
+						"soundRangeByType": {
+							"*-adult": 60,
+							"*": 30
+						}
+					},
+					{
+						"code": "idle",
+						"animation": "Eat",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"minduration": 2667,
+						"maxduration": 2667,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animationSpeed": 1
+					},
+					{
+						"code": "wander",
+						"animation": "Walk",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"movespeedByType": {
+							"goat-angora-*-adult": 0.006,
+							"goat-ibexalp-*-adult": 0.006,
+							"goat-ibexnub-*-adult": 0.006,
+							"goat-markhor-*-adult": 0.006,
+							"goat-mountain-*-adult": 0.006,
+							"goat-muskox-*-adult": 0.0065,
+							"goat-nubian-*-adult": 0.006,
+							"goat-sirohi-*-adult": 0.006,
+							"goat-takingold-*-adult": 0.0065,
+							"goat-turdag-*-adult": 0.006,
+							"goat-valais-*-adult": 0.006,
+							"*-baby": 0.004,
+							"*": 0.006
+						},
+						"animationSpeedByType": {
+							"*-baby": 0.8,
+							"*": 0.8
+						},
+						"preferredLightLevel": 12
+					},
+					{
+						"code": "seekfoodandeat",
+						"movespeedByType": {
+							"goat-angora-*-adult": 0.006,
+							"goat-ibexalp-*-adult": 0.006,
+							"goat-ibexnub-*-adult": 0.006,
+							"goat-markhor-*-adult": 0.006,
+							"goat-mountain-*-adult": 0.006,
+							"goat-muskox-*-adult": 0.0065,
+							"goat-nubian-*-adult": 0.006,
+							"goat-sirohi-*-adult": 0.006,
+							"goat-takingold-*-adult": 0.0065,
+							"goat-turdag-*-adult": 0.006,
+							"goat-valais-*-adult": 0.006,
+							"*-baby": 0.004,
+							"*": 0.006
+						},
+						"priority": 1.25,
+						"eatSoundByType": {
+							"*": "creature/animal-eat-small"
+						},
+						"eatTime": 1.5,
+						"eatLooseItems": true,
+						"animationSpeedByType": {
+							"goat-muskox-*-adult": 1.5,
+							"goat-takingold-*-adult": 1.5,
+							"*-adult": 1.4,
+							"*-baby": 1.1,
+							"*": 1.4
+						},
+						"animation": "Walk",
+						"eatAnimation": "Eat",
+						"mincooldownHours": 1,
+						"maxcooldownHours": 4
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			},
+			{
+				"code": "pettable",
+				"minGeneration": 1
+			},
+			{
+				"code": "antlergrowth",
+				"enabledByType": { "*-adult": true, "*": false },
+				"variantsByType": {
+					"goat-angora-*": ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
+					"goat-ibexalp-*": ["01", "02", "03", "04", "05", "06", "07"],
+					"goat-ibexnub-*": ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
+					"goat-markhor-*": ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
+					"goat-mountain-*": ["01", "02", "03", "04", "05", "06"],
+					"goat-muskox-*": ["01", "02", "03", "04", "05"],
+					"goat-nubian-*": ["01", "02", "03", "04"],
+					"goat-sirohi-*": ["01", "02", "03", "04"],
+					"goat-takingold-*": ["01", "02", "03", "04", "05"],
+					"goat-turdag-*": ["01", "02", "03", "04", "05", "06", "07"],
+					"goat-valais-*": ["01", "02", "03", "04", "05", "06", "07", "08"]
+				},
+				"c1": "Disables the yearly interval of growing and shedding and uses the growDurationMonths value instead to grow the antlers once",
+				"beginGrowMonth": -1,
+				"growDurationMonths": 12
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"triesPerChunk": { "avg": 0, "var": 0 },
+				"tryOnlySurface": true,
+				"groupSize": { "avg": 2, "var": 3 },
+				"insideBlockCodes": [ "air", "tallgrass-*", "snowlayer-1" ],
+				"companionsByType": {
+					"goat-*-male-adult": ["goat-{type}-female-adult"],
+					"goat-*-female-adult": ["goat-{type}-female-baby", "goat-{type}-male-baby"]
+				}
+			},
+			"runtime": {
+				"group": "neutral",
+				"maxQuantity": 0,
+				"tryOnlySurface": true,
+				"chance": 0.005,
+				"minLightLevel": 10,
+				"groupSize": { "avg": 2.0, "var": 3.0 },
+				"insideBlockCodes": [ "air", "tallgrass-*", "snowlayer-1" ],
+				"companionsByType": {
+					"goat-*-male-adult": ["goat-{type}-female-adult"],
+					"goat-*-female-adult": ["goat-{type}-female-baby", "goat-{type}-male-baby"]
+				}
+			}
+		},
+		"spawnconditionsByType": {
+			"goat-angora-*-adult": {
+				"climate": {
+					"minTemp": -5,
+					"maxTemp": 12,
+					"minRain": 0.0,
+					"maxRain": 0.5,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.4,
+					"maxShrubs": 0.8,
+					"minY": 1.4,
+					"maxY": 1.8					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.05, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-ibexalp-*-adult": {
+				"climate": {
+					"minTemp": -15,
+					"maxTemp": 5,
+					"minRain": 0.0,
+					"maxRain": 0.7,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.2,
+					"maxShrubs": 0.8,
+					"minY": 1.4,
+					"maxY": 1.9					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.05, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-ibexnub-*-adult": {
+				"climate": {
+					"minTemp": 20,
+					"maxTemp": 40,
+					"minRain": 0.0,
+					"maxRain": 0.4,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.1,
+					"maxShrubs": 0.8,
+					"minY": 1.1,
+					"maxY": 1.4					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.02, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-markhor-*-adult": {
+				"climate": {
+					"minTemp": 0,
+					"maxTemp": 15,
+					"minRain": 0.0,
+					"maxRain": 0.6,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.3,
+					"maxShrubs": 0.8,
+					"minY": 1.4,
+					"maxY": 1.9					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.04, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-mountain-*-adult": {
+				"climate": {
+					"minTemp": -19,
+					"maxTemp": 1,
+					"minRain": 0.0,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.2,
+					"maxShrubs": 0.8,
+					"minY": 1.5,
+					"maxY": 1.99					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.05, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-muskox-*-adult": {
+				"climate": {
+					"minTemp": -30,
+					"maxTemp": -10,
+					"minRain": 0.0,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.4,
+					"maxShrubs": 0.8,
+					"minY": 0.9,
+					"maxY": 1.2					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-nubian-*-adult": {
+				"climate": {
+					"minTemp": 19,
+					"maxTemp": 30,
+					"minRain": 0.0,
+					"maxRain": 0.3,
+					"minForestOrShrubs": 0.1,
+					"maxForest": 0.4,
+					"maxShrubs": 0.8,
+					"minY": 1.0,
+					"maxY": 1.4					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.004, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-sirohi-*-adult": {
+				"climate": {
+					"minTemp": 20,
+					"maxTemp": 30,
+					"minRain": 0.3,
+					"maxRain": 0.6,
+					"minForestOrShrubs": 0.2,
+					"maxForest": 0.5,
+					"maxShrubs": 0.8,
+					"minY": 0.9,
+					"maxY": 1.3					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.004, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-takingold-*-adult": {
+				"climate": {
+					"minTemp": 0,
+					"maxTemp": 14,
+					"minRain": 0.1,
+					"maxRain": 0.7,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.4,
+					"maxShrubs": 0.8,
+					"minY": 1.4,
+					"maxY": 1.8					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.05, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-turdag-*-adult": {
+				"climate": {
+					"minTemp": 4,
+					"maxTemp": 18,
+					"minRain": 0.0,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.3,
+					"maxShrubs": 0.8,
+					"minY": 1.4,
+					"maxY": 1.9					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.05, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			},
+			"goat-valais-*-adult": {
+				"climate": {
+					"minTemp": -5,
+					"maxTemp": 10,
+					"minRain": 0.0,
+					"maxRain": 0.5,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.4,
+					"maxShrubs": 0.8,
+					"minY": 1.1,
+					"maxY": 1.5					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.02, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "goat-*", "maxQuantity": 4 }
+				}
+			}
+		}
+	},
+	"soundsByType": {
+		"*-adult":{
+			"hurt": "creature/goat/hurt*",
+			"death": "creature/goat/death*",
+			"idle": "creature/goat/bleat*"
+		},
+		"*-baby":{
+			"hurt": "creature/goat/goatkidhurt1*",
+			"death": "creature/goat/goatkidbleat*",
+			"idle": "creature/goat/goatkidbleat*"
+		}
+	},
+	"idleSoundChance": 0.1
+}

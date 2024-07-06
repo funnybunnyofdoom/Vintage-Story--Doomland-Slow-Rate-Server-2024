@@ -1,0 +1,28 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"lid-dirty2": "block/clay/lid-dirty"
+	},
+	"elements": [
+		{
+			"name": "lid",
+			"from": [ 5.5, 0.0, 5.5 ],
+			"to": [ 10.5, 0.5, 10.5 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#lid-dirty2", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+				"east": { "texture": "#lid-dirty2", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+				"south": { "texture": "#lid-dirty2", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+				"west": { "texture": "#lid-dirty2", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+				"up": { "texture": "#lid-dirty2", "uv": [ 2.5, 5.5, 7.5, 10.5 ] },
+				"down": { "texture": "#lid-dirty2", "uv": [ 10.0, 8.0, 15.0, 13.0 ] }
+			}
+		}
+	]}

@@ -1,0 +1,27 @@
+{
+	code: "glueportion-pitch-hot",
+	perishableProps: {
+		type: "Harden",
+		freshHours: { avg: 4 },
+		transitionHours: { avg: 0.01 },
+		transitionRatio: 1,
+		transitionedStack: { type: "item", code: "glueportion-pitch-cold" }
+	},
+	shape: { base: "block/food/meal/liquid" },
+	ingredients: [
+		{ 
+			code: "resin", 
+			validStacks: [  { type: "item", code: "resin" } ],
+			minQuantity: 2,
+			maxQuantity: 2
+		},
+		{
+			code: "charcoal", 
+			validStacks: [ { type: "item", code: "powder-charcoal-raw" } ],
+			minQuantity: 2,
+			maxQuantity: 2
+		}
+	],
+	dirtyPot: true,
+	dirtyPotOutput: "glueportion-pitch-hot"
+}

@@ -1,0 +1,1220 @@
+{
+	"code": "deer",
+	"class": "EntityAgent",
+	"variantgroups": [
+		{ "code": "type", "states": ["whitetail", "redbrocket", "marsh", "caribou", "water", "pudu", "elk", "taruca", "chital", "guemal", "pampas", "fallow" ] },
+		{ "code": "gender", "states": ["male", "female"] },
+		{ "code": "age", "states": ["adult", "baby"] }
+	],
+	"hitBoxSizeByType": {
+		"deer-whitetail-*-adult": { "x": 1.1,"y": 1.1},
+		"deer-redbrocket-*-adult": { "x": 0.7,"y": 0.8},
+		"deer-marsh-*-adult": { "x": 1.1,"y": 1.3},
+		"deer-caribou-*-adult": { "x": 1.1,"y": 1.2},
+		"deer-pudu-*-adult": { "x": 0.7,"y": 0.7},
+		"deer-elk-*-adult": { "x": 1.3,"y": 1.5},
+		"deer-taruca-*-adult": { "x": 0.9,"y": 0.9},
+		"deer-chital-*-adult": { "x": 1.1,"y": 1.0},
+		"deer-guemal-*-adult": { "x": 0.9,"y": 0.9},
+		"deer-pampas-*-adult": { "x": 0.6,"y": 0.7},
+		"deer-fallow-*-adult": { "x": 1.0,"y": 1.0},
+		"deer-redbrocket-*-baby": { "x": 0.6,"y": 0.6},
+		"deer-caribou-*-baby": { "x": 0.9,"y": 0.9},
+		"deer-pudu-*-baby": { "x": 0.5,"y": 0.4},
+		"deer-taruca-*-baby": { "x": 0.6,"y": 0.6},
+		"deer-pampas-*-baby": { "x": 0.5,"y": 0.5},
+		"*": { "x": 0.7,"y": 0.7}
+	},
+	"deadhitBoxSizeByType": {
+		"deer-whitetail-*-adult": { "x": 1.1,"y": 0.4},
+		"deer-redbrocket-*-adult": { "x": 0.7,"y": 0.3},
+		"deer-marsh-*-adult": { "x": 1.1,"y": 0.4},
+		"deer-caribou-*-adult": { "x": 1.1,"y": 0.4},
+		"deer-pudu-*-adult": { "x": 0.7,"y": 0.3},
+		"deer-elk-*-adult": { "x": 1.3,"y": 0.5},
+		"deer-taruca-*-adult": { "x": 0.9,"y": 0.3},
+		"deer-chital-*-adult": { "x": 1.0,"y": 0.4},
+		"deer-guemal-*-adult": { "x": 1.0,"y": 0.3},
+		"deer-pampas-*-adult": { "x": 0.7,"y": 0.3},
+		"deer-fallow-*-adult": { "x": 1.0,"y": 0.4},
+		"deer-redbrocket-*-baby": { "x": 0.5,"y": 0.2},
+		"deer-caribou-*-baby": { "x": 0.9,"y": 0.4},
+		"deer-water-*-baby": { "x": 0.5,"y": 0.2},
+		"deer-pudu-*-baby": { "x": 0.5,"y": 0.2},
+		"deer-taruca-*-baby": { "x": 0.5,"y": 0.2},
+		"deer-guemal-*-baby": { "x": 0.5,"y": 0.2},
+		"deer-pampas-*-baby": { "x": 0.5,"y": 0.2},
+		"*": { "x": 0.6,"y": 0.3}
+	},
+	"eyeHeightByType": {
+		"deer-whitetail-*-adult": 1.4,
+		"deer-redbrocket-*-adult": 0.7,
+		"deer-marsh-*-adult": 1.4,
+		"deer-caribou-*-adult": 1.4,
+		"deer-pudu-*-adult": 0.6,
+		"deer-elk-*-adult": 1.75,
+		"deer-taruca-*-adult": 1.2,
+		"deer-chital-*-adult": 1.2,
+		"deer-pampas-*-adult": 0.9,
+		"deer-fallow-*-adult": 1.2,
+		"*": 0.6
+	},
+	"fallDamageMultiplier": 0.5,
+	"drops": [],
+	"attributes": {
+		killedByInfoText: "deadcreature-killed",
+		creatureDiet: {
+			foodCategories: ["Vegetable", "Grain"],
+			foodTags: ["nibbleCrop", "grass"],
+			skipFoodTags: ["rice", "parsnip"]
+		},
+		basketCatchable: true,
+		trapChance: 0.0,
+		trapDestroyChance: 0.2,
+		handbook: {
+			"groupcode": "creaturegroup-deer"
+		}
+	},
+	"client": {
+		"renderer": "Shape",
+		"shapeByType": {
+			"*-whitetail-*-adult": { "base": "entity/land/hooved/deer/whitetail/adult" },
+			"*-whitetail-*-baby": { "base": "entity/land/hooved/deer/whitetail/baby" },
+			"*-redbrocket-*-adult": { "base": "entity/land/hooved/deer/redbrocket/adult" },
+			"*-redbrocket-*-baby": { "base": "entity/land/hooved/deer/taruca/baby" },
+			"*-marsh-*-adult": { "base": "entity/land/hooved/deer/marsh/adult" },
+			"*-marsh-*-baby": { "base": "entity/land/hooved/deer/whitetail/baby" },
+			"*-caribou-*-adult": { "base": "entity/land/hooved/deer/caribou/adult" },
+			"*-caribou-*-baby": { "base": "entity/land/hooved/deer/caribou/baby" },
+			"*-water-*-adult": { "base": "entity/land/hooved/deer/water/adult" },
+			"*-water-*-baby": { "base": "entity/land/hooved/deer/taruca/baby" },
+			"*-pudu-*-adult": { "base": "entity/land/hooved/deer/pudu/adult" },
+			"*-pudu-*-baby": { "base": "entity/land/hooved/deer/pudu/baby" },
+			"*-elk-male-adult": { "base": "entity/land/hooved/deer/elk/male" },
+			"*-elk-female-adult": { "base": "entity/land/hooved/deer/elk/female" },
+			"*-elk-*-baby": { "base": "entity/land/hooved/deer/elk/baby" },
+			"*-taruca-*-adult": { "base": "entity/land/hooved/deer/taruca/adult" },
+			"*-taruca-*-baby": { "base": "entity/land/hooved/deer/taruca/baby" },
+			"*-chital-*-adult": { "base": "entity/land/hooved/deer/chital/adult" },
+			"*-chital-*-baby": { "base": "entity/land/hooved/deer/whitetail/baby" },
+			"*-guemal-*-adult": { "base": "entity/land/hooved/deer/guemal/adult" },
+			"*-guemal-*-baby": { "base": "entity/land/hooved/deer/taruca/baby" },
+			"*-pampas-*-adult": { "base": "entity/land/hooved/deer/pampas/adult" },
+			"*-pampas-*-baby": { "base": "entity/land/hooved/deer/taruca/baby" },
+			"*-fallow-*-adult": { "base": "entity/land/hooved/deer/chital/adult" },
+			"*-fallow-*-baby": { "base": "entity/land/hooved/deer/whitetail/baby" },
+			"*": { "base": "entity/land/hooved/deer/whitetail-adult" }
+		},
+		"textureByType": {
+			"*-marsh-*-baby": { "base": "entity/hooved/deer/whitetail-baby" },
+			"*-fallow-*-baby": { "base": "entity/hooved/deer/whitetail-baby" },
+			"*-chital-*-baby": { "base": "entity/hooved/deer/whitetail-baby" },
+			"*": { "base": "entity/hooved/deer/{type}-{age}" },    
+		},
+		"sizeByType": {
+			"*-male-adult": 1.05,
+			"*-female-adult": 0.95
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{ "code": "controlledphysics", "stepHeightByType": {
+					"deer-pampas-*": 2.1251,
+					"deer-pudu-*": 2.1251,
+					"deer-redbrocket-*": 2.1251,
+					"*": 3.1251
+				}
+			},
+			{ "code": "interpolateposition" },
+			{ "code": "floatupwhenstuck", "onlyWhenDead": true },
+			{ "code": "harvestable" },
+			{ "code": "despawn", "minPlayerDistance": 16, "belowLightLevel": 8, "minSeconds": 300 },
+			{ "code": "antlergrowth", "enabledByType": { "*-male-adult": true, "*": false } }
+		],
+		"animations": [
+			{
+				"code": "attack",
+				"animation": "Attack",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "charge",
+				"animation": "Charge",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "roar",
+				"animation": "Roar",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "hurt",
+				"animation": "Hurt",
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "die",
+				"animation": "Die",
+				"easeInSpeed": 3,
+				"animationSpeedByType": {
+					"*-adult": 0.8,
+					"*-baby": 1.0
+				},
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "Idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			},
+			{
+				"code": "sleep",
+				"animation": "Sleep",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "sit",
+				"animation": "Sit",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "eat",
+				"animation": "Eat",
+				"easeInSpeed": 4,
+				"easeOutSpeed": 4,
+				"blendMode": "Average"
+			},
+			{
+				"code": "swim",
+				"animation": "Swim",
+				"supressDefaultAnimation": true,
+				"blendMode": "Average"
+			},
+			{
+				"code": "walk",
+				"animation": "Walk",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "run",
+				"animation": "Run",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "stot",
+				"animation": "Stot",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			},
+			{
+				"code": "gallop",
+				"animation": "Gallop",
+				"supressDefaultAnimation": true,
+				"blendMode": "AddAverage"
+			}	
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 90,
+				"maxTurnAnglePerSec": 180
+			}
+		},
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeightByType": {
+					"deer-pampas-*": 2.1251,
+					"deer-pudu-*": 2.1251,
+					"deer-redbrocket-*": 2.1251,
+					"*": 3.1251
+				}
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 8,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealthByType": {
+					"deer-redbrocket-*-adult": 10,
+					"deer-redbrocket-*-baby": 3,
+					"deer-water-*-adult": 11,
+					"deer-water-*-baby": 4,
+					"deer-pudu-*-adult": 6,
+					"deer-pudu-*-baby": 2,
+					"deer-elk-*-adult": 30,
+					"deer-elk-*-baby": 9,
+					"deer-pampas-*-adult": 10,
+					"deer-pampas-*-baby": 3,
+					"*-adult": 21,
+					"*-baby": 6
+				},
+				"maxhealthByType": {
+					"deer-redbrocket-*-adult": 10,
+					"deer-redbrocket-*-baby": 3,
+					"deer-water-*-adult": 11,
+					"deer-water-*-baby": 4,
+					"deer-pudu-*-adult": 6,
+					"deer-pudu-*-baby": 2,
+					"deer-elk-*-adult": 30,
+					"deer-elk-*-baby": 9,
+					"deer-pampas-*-adult": 10,
+					"deer-pampas-*-baby": 3,
+					"*-adult": 21,
+					"*-baby": 6
+				}
+			},
+			{
+				"code": "deaddecay",
+				"hoursToDecay": 96,
+				"decayedBlockByType": {
+					"deer-water-*-adult": "carcass-small",
+					"deer-pudu-*-adult": "carcass-small",
+					"deer-elk-*-adult": "carcass-large",
+					"*-baby": "carcass-small",
+					"*": "carcass-medium"
+				}
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{
+				"code": "harvestable",
+				"drops": [
+					{
+						"type": "item",
+						"code": "redmeat-raw",
+						"quantityByType": {
+							"deer-redbrocket-*-adult": {
+								"avg": 5,
+								"var": 2
+							},
+							"deer-redbrocket-*-baby": {
+								"avg": 1,
+								"var": 0
+							},
+							"deer-water-*-adult": {
+								"avg": 5,
+								"var": 2
+							},
+							"deer-water-*-baby": {
+								"avg": 1,
+								"var": 0
+							},
+							"deer-elk-*-adult": {
+								"avg": 20,
+								"var": 5
+							},
+							"deer-elk-*-baby": {
+								"avg": 4,
+								"var": 1
+							},
+							"deer-pampas-*-adult": {
+								"avg": 5,
+								"var": 2
+							},
+							"*-adult": {
+								"avg": 13,
+								"var": 3
+							},
+							"*-baby": {
+								"avg": 2,
+								"var": 1
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-large",
+						"quantityByType": {
+							"deer-whitetail-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"deer-marsh-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"deer-caribou-*-adult": {
+								"avg": 1.7,
+								"var": 0.0
+							},
+							"deer-elk-*-adult": {
+								"avg": 2.0,
+								"var": 0.0
+							},
+							"deer-chital-*-adult": {
+								"avg": 2.0,
+								"var": 0.0
+							},
+							"deer-fallow-*-adult": {
+								"avg": 2.0,
+								"var": 0.0
+							},
+							"*": {
+								"avg": 0,
+								"var": 0
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-medium",
+						"quantityByType": {
+							"deer-redbrocket-*-adult": {
+								"avg": 1.7,
+								"var": 1.0
+							},
+							"deer-water-*-adult": {
+								"avg": 1.3,
+								"var": 1.0
+							},
+							"deer-taruca-*-adult": {
+								"avg": 1.3,
+								"var": 1.0
+							},
+							"deer-guemal-*-adult": {
+								"avg": 1.3,
+								"var": 1.0
+							},
+							"deer-pampas-*-adult": {
+								"avg": 1.7,
+								"var": 1.0
+							},
+							"*": {
+								"avg": 0,
+								"var": 0
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "hide-raw-small",
+						"quantityByType": {
+							"deer-pudu-*-adult": {
+								"avg": 1.0,
+								"var": 0
+							},
+							"deer-pudu-*-baby": {
+								"avg": 0,
+								"var": 0
+							},
+							"*-baby": {
+								"avg": 1.3,
+								"var": 0
+							},
+							"*": {
+								"avg": 0,
+								"var": 0
+							}
+						}
+					},
+					{
+						"type": "item",
+						"code": "fat",
+						"quantityByType": {
+							"deer-whitetail-*-adult": {
+								"avg": 2,
+								"var": 0.3
+							},
+							"deer-marsh-*-adult": {
+								"avg": 2,
+								"var": 0.3
+							},
+							"deer-caribou-*-adult": {
+								"avg": 2,
+								"var": 0.3
+							},
+							"deer-elk-*-adult": {
+								"avg": 2,
+								"var": 0.5
+							},
+							"deer-taruca-*-adult": {
+								"avg": 1.8,
+								"var": 0.3
+							},
+							"deer-chital-*-adult": {
+								"avg": 1.8,
+								"var": 0.3
+							},
+							"deer-guemal-*-adult": {
+								"avg": 1.8,
+								"var": 0.3
+							},
+							"deer-fallow-*-adult": {
+								"avg": 1.8,
+								"var": 0.3
+							},
+							"*": {
+								"avg": 0,
+								"var": 0
+							}
+						}
+					}
+				]
+			},
+			{ "code": "breathe" },
+			{ 
+				code: "grow", 
+				enabledByType: {
+					"*-baby": true,
+					"*-adult": false
+				},
+				hoursToGrow: 336,
+				adultEntityCodesByType: {
+					"*-male-baby": ["deer-{type}-male-adult"],
+					"*-female-baby": ["deer-{type}-female-adult"]
+				},
+			},
+			{
+				"code": "emotionstates",
+				"states": [
+					{
+						"code": "fleeondamage",
+						"whenHealthRelBelow": 0.4,
+						"duration": 60,
+						"chanceByType": {
+							"*-male-*": 0.95,
+							"*": 1.0
+						},
+						"slot": 0,
+						"priority": 5,
+						"accumType": "max"
+					},
+					{
+						"code": "fleeondamage",
+						"duration": 40,
+						"chanceByType": {
+							"*-male-*": 0.85,
+							"*": 1.0
+						},
+						"slot": 0,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "alarmherdondamage",
+						"chance": 1,
+						"slot": 1,
+						"priority": 1,
+						"accumType": "max"
+					},
+					{
+						"code": "aggressiveondamage",
+						"duration": 30,
+						"chanceByType": {
+							"*-male-*": 0.5,
+							"*": 0.0
+						},
+						"slot": 0,
+						"priority": 2,
+						"accumType": "noaccum"
+					},
+					{
+						"code": "saturated",
+						"duration": 1200,
+						"chance": 1,
+						"slot": 0,
+						"priority": 1,
+						"accumType": "sum"
+					}
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"animation": "Attack",
+						"enabledByType": {
+							"*-baby": false,
+							"*-female-*": false,
+							"*": true
+						},
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "bear-*", "hyena-male", "hyena-female", "fox-male", "fox-female" ],
+						"priority": 3,
+						"damageByType": {
+							"deer-whitetail-male-adult": 8,
+							"deer-whitetail-female-adult": 6,
+							"deer-redbrocket-male-adult": 6,
+							"deer-redbrocket-female-adult": 4,
+							"deer-marsh-male-adult": 7,
+							"deer-marsh-female-adult": 5,
+							"deer-caribou-male-adult": 10,
+							"deer-caribou-female-adult": 8,
+							"deer-water-male-adult": 6,
+							"deer-water-female-adult": 4,
+							"deer-pudu-male-adult": 1,
+							"deer-pudu-female-adult": 0.6,
+							"deer-elk-male-adult": 12,
+							"deer-elk-female-adult": 9,
+							"deer-taruca-male-adult": 6,
+							"deer-taruca-female-adult": 4,
+							"deer-chital-male-adult": 8,
+							"deer-chital-female-adult": 6,
+							"deer-guemal-male-adult": 6,
+							"deer-guemal-female-adult": 4,
+							"deer-pampas-male-adult": 6,
+							"deer-pampas-female-adult": 4,
+							"deer-fallow-male-adult": 8,
+							"deer-fallow-female-adult": 6,
+							"deer-baby": 0.1
+						},
+						"damageTier": 2,
+						"damageType": "SlashingAttack",
+						"slot": 1,
+						"mincooldown": 1500,
+						"maxcooldown": 2500,
+						"attackDurationMs": 1250,
+						"damagePlayerAtMs": 500,
+						"animationSpeed": 2.5,
+						"sound": "creature/hooved/generic/sniff*",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "fleeentity",
+						"animation": "Run",
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"priority": 1.51,
+						"movespeedByType": {
+							"deer-whitetail-*-adult": 0.08,
+							"deer-whitetail-*-baby": 0.06,
+							"deer-redbrocket-*-adult": 0.06,
+							"deer-redbrocket-*-baby": 0.05,
+							"deer-marsh-*-adult": 0.08,
+							"deer-marsh-*-baby": 0.06,							
+							"deer-caribou-*-adult": 0.08,
+							"deer-caribou-*-baby": 0.06,
+							"deer-water-*-adult": 0.06,
+							"deer-water-*-baby": 0.05,
+							"deer-pudu-*-adult": 0.06,
+							"deer-pudu-*-baby": 0.05,
+							"deer-elk-*-adult": 0.08,
+							"deer-elk-*-baby": 0.06,
+							"deer-taruca-*-adult": 0.08,
+							"deer-taruca-*-baby": 0.06,
+							"deer-chital-*-adult": 0.08,
+							"deer-chital-*-baby": 0.06,
+							"deer-guemal-*-adult": 0.08,
+							"deer-guemal-*-baby": 0.06,
+							"deer-pampas-*-adult": 0.06,
+							"deer-pampas-*-baby": 0.05,
+							"deer-fallow-*-adult": 0.08,
+							"deer-fallow-*-baby": 0.06
+						},
+						"seekingRange": 14,
+						"animationSpeed": 2,
+						"sound": "creature/hooved/generic/call*"
+					},
+					{
+						"code": "seekentity",
+						"animation": "Charge",
+						"enabledByType": {
+							"*-baby": false,
+							"*-female-*": false,
+							"*": true
+						},
+						"entityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female" ],
+						"priority": 1.6,
+						"mincooldown": 600,
+						"maxcooldown": 650,
+						"movespeed": 0.05,
+						"seekingRange": 20,
+						"animationSpeed": 1,
+						"sound": "creature/hooved/generic/sniff*",
+						"whenInEmotionState": "aggressiveondamage"
+					},
+					{
+						"code": "stayclosetoentity",
+						"animation": "Run",
+						"enabledByType": {
+							"*-baby": true,
+							"*": false
+						},
+						"priority": 1.4,
+						"entityCodeByType": {
+							"*": "deer-{type}-female-adult"
+						},
+						"movespeed": 0.02,
+						"animationSpeed": 3,
+						"maxDistance": 5,
+						"searchRange": 25
+					},
+					{
+						"code": "getoutofwater",
+						"animation": "Swim",
+						"priority": 1.4,
+						"movespeedByType": {
+							"deer-whitetail-*-adult": 0.045,
+							"deer-whitetail-*-baby": 0.035,
+							"deer-redbrocket-*-adult": 0.04,
+							"deer-redbrocket-*-baby": 0.03,
+							"deer-marsh-*-adult": 0.045,
+							"deer-marsh-*-baby": 0.035,
+							"deer-caribou-*-adult": 0.045,
+							"deer-caribou-*-baby": 0.035,
+							"deer-water-*-adult": 0.04,
+							"deer-water-*-baby": 0.03,
+							"deer-pudu-*-adult": 0.04,
+							"deer-pudu-*-baby": 0.03,
+							"deer-elk-*-adult": 0.045,
+							"deer-elk-*-baby": 0.035,
+							"deer-taruca-*-adult": 0.045,
+							"deer-taruca-*-baby": 0.035,
+							"deer-chital-*-adult": 0.045,
+							"deer-chital-*-baby": 0.035,
+							"deer-guemal-*-adult": 0.045,
+							"deer-guemal-*-baby": 0.035,
+							"deer-pampas-*-adult": 0.04,
+							"deer-pampas-*-baby": 0.03,
+							"deer-fallow-*-adult": 0.045,
+							"deer-fallow-*-baby": 0.035,
+							"*": 0.045
+						},
+						"animationSpeed": 1
+					},
+					{
+						"code": "idle",
+						"animation": "Idle",
+						"priority": 0.9,
+						"minduration": 6000,
+						"maxduration": 45000,
+						"mincooldown": 6000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.28,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 10,
+						"stopOnHurt": true,
+						"sound": "creature/hooved/generic/sniff*"
+					},
+					{
+						"code": "idle",
+						"animation": "Sleep",
+						"priority": 1.38,
+						"minduration": 200000,
+						"maxduration": 800000,
+						"mincooldown": 10000,
+						"maxcooldown": 30000,
+						"priorityForCancel": 1.38,
+						"whenNotInEmotionState": "aggressiveondamage",
+						"duringDayTimeFrames": [
+							{
+								"fromHour": 10,
+								"toHour": 18
+							},
+							{
+								"fromHour": 1,
+								"toHour": 4
+							}
+						],
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 8,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"animation": "Sit",
+						"priority": 0.9,
+						"minduration": 6000,
+						"maxduration": 45000,
+						"mincooldown": 6000,
+						"maxcooldown": 120000,
+						"priorityForCancel": 1.28,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"stopRange": 10,
+						"stopOnHurt": true
+					},
+					{
+						"code": "idle",
+						"animation": "Roar",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"minduration": 4667,
+						"maxduration": 4667,
+						"chance": 0.1,
+						"mincooldown": 8000,
+						"maxcooldown": 50000,
+						"animationSpeed": 1.0,
+						"soundByType": {
+							"*-adult": "creature/hooved/generic/sniff*"
+						},
+						"soundRangeByType": {
+							"*-whitetail-*-adult": 80,
+							"*-elk-*-adult": 120,
+							"*-adult": 60,
+							"*": 30
+						}
+					},
+					{
+						"code": "idle",
+						"animation": "Eat",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"minduration": 2667,
+						"maxduration": 2667,
+						"mincooldown": 6000,
+						"maxcooldown": 20000,
+						"animationSpeed": 1
+					},
+					{
+						"code": "wander",
+						"animation": "Walk",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"stopOnNearbyEntityCodes": [ "player", "wolf-male", "wolf-female", "hyena-male", "hyena-female", "bear-*" ],
+						"movespeedByType": {
+							"deer-whitetail-*-adult": 0.006,
+							"deer-whitetail-*-baby": 0.004,
+							"deer-redbrocket-*-adult": 0.005,
+							"deer-redbrocket-*-baby": 0.003,
+							"deer-marsh-*-adult": 0.006,
+							"deer-marsh-*-baby": 0.004,
+							"deer-caribou-*-adult": 0.006,
+							"deer-caribou-*-baby": 0.004,
+							"deer-water-*-adult": 0.005,
+							"deer-water-*-baby": 0.003,
+							"deer-pudu-*-adult": 0.0035,
+							"deer-pudu-*-baby": 0.002,
+							"deer-elk-*-adult": 0.0065,
+							"deer-elk-*-baby": 0.0045,
+							"deer-taruca-*-adult": 0.006,
+							"deer-taruca-*-baby": 0.004,
+							"deer-chital-*-adult": 0.006,
+							"deer-chital-*-baby": 0.004,
+							"deer-guemal-*-adult": 0.006,
+							"deer-guemal-*-baby": 0.004,
+							"deer-pampas-*-adult": 0.005,
+							"deer-pampas-*-baby": 0.003,							
+							"deer-fallow-*-adult": 0.006,
+							"deer-fallow-*-baby": 0.004,
+							"*": 0.006
+						},
+						"animationSpeedByType": {
+							"*-baby": 0.8,
+							"*": 0.8
+						},
+						"preferredLightLevel": 12
+					},
+					{
+						"code": "seekfoodandeat",
+						"movespeedByType": {
+							"deer-whitetail-*-adult": 0.006,
+							"deer-redbrocket-*-adult": 0.005,
+							"deer-marsh-*-adult": 0.006,
+							"deer-caribou-*-adult": 0.006,
+							"deer-water-*-adult": 0.005,
+							"deer-pudu-*-adult": 0.004,
+							"deer-elk-*-adult": 0.007,
+							"deer-taruca-*-adult": 0.006,
+							"deer-chital-*-adult": 0.006,
+							"deer-guemal-*-adult": 0.006,
+							"deer-pampas-*-adult": 0.005,
+							"deer-fallow-*-adult": 0.006,
+							"*-baby": 0.004
+						},
+						"priority": 1.25,
+						"eatSoundByType": {
+							"*": "creature/animal-eat-small"
+						},
+						"eatTime": 1.5,
+						"eatLooseItems": true,
+						"animationSpeedByType": {
+							"deer-whitetail-*-adult": 1.5,
+							"deer-redbrocket-*-adult": 1.3,
+							"deer-marsh-*-adult": 1.5,
+							"deer-caribou-*-adult": 1.5,
+							"deer-water-*-adult": 1.3,
+							"deer-pudu-*-adult": 1.3,
+							"deer-elk-*-adult": 1.5,
+							"deer-taruca-*-adult": 1.5,
+							"deer-chital-*-adult": 1.5,
+							"deer-guemal-*-adult": 1.5,
+							"deer-pampas-*-adult": 1.3,
+							"deer-fallow-*-adult": 1.5,
+							"*-baby": 1.1
+						},
+						"animation": "Walk",
+						"eatAnimation": "Eat",
+						"mincooldownHours": 1,
+						"maxcooldownHours": 4
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			},
+			{
+				"code": "pettable",
+				"minGeneration": 1
+			},
+			{
+				"code": "antlergrowth",
+				"enabledByType": { "*-male-adult": true, "*": false },
+				"variantsByType": {
+					"deer-whitetail-male-adult": ["01", "02", "03", "04", "05", "06"],
+					"deer-redbrocket-male-adult": ["01", "02", "03", "04"],
+					"deer-marsh-male-adult": ["01", "02", "03", "04", "05", "06", "07"],
+					"deer-caribou-male-adult": ["01", "02", "03", "04", "05", "06", "07", "08"],
+					"deer-water-male-adult": ["01"],
+					"deer-pudu-male-adult": ["01", "02", "03", "04"],
+					"deer-elk-male-adult": ["01", "02", "03", "04", "05", "06", "07", "08"],
+					"deer-taruca-male-adult": ["01", "02", "03", "04", "05"],
+					"deer-chital-male-adult": ["01", "02", "03", "04", "05", "06", "07", "08"],
+					"deer-guemal-male-adult": ["01", "02", "03", "04", "05"],
+					"deer-pampas-male-adult": ["01", "02", "03", "04", "05", "06", "07"],
+					"deer-fallow-male-adult": ["01", "02", "03", "04", "05", "06", "07", "08"]
+				},
+				"beginGrowMonth": 10,
+				
+				"c1": "Amount of months until full growth. Must be less than 9 months (including grown and shed duration)",
+				"growDurationMonths": 3,
+				
+				"c2": "Amount of months the antler can be at full growth until shedding",
+				"grownDurationMonths": 1,
+				
+				"c3": "Amount of months the antler can shed. Higher values allows players to find them for longer. A value of 0 will make antlers never drop",
+				"shedDurationMonths": 0.5,
+				
+				"noItemDropByType": { "deer-water-male-adult": true, "*": false }				
+			}
+		],
+		"spawnconditions": {
+			"worldgen": {
+				"triesPerChunk": { "avg": 0, "var": 0 },
+				"tryOnlySurface": true,
+				"groupSize": { "avg": 2, "var": 3 },
+				"insideBlockCodes": ["air", "tallgrass-*", "snowlayer-1"],
+				"companions": ["deer-{type}-female-adult", "deer-{type}-female-baby", "deer-{type}-male-baby"]
+			},
+			"runtime": {
+				"group": "neutral",
+				"maxQuantity": 0,
+				"tryOnlySurface": true,
+				"chance": 0.005,
+				"minLightLevel": 10,
+				"groupSize": { "avg": 2.0, "var": 3.0 },
+				"insideBlockCodes": [ "air", "soil-*","gravel-*", "tallgrass-*", "snowlayer-1", "sand-*"],
+				"companions": ["deer-{type}-female-adult", "deer-{type}-female-baby", "deer-{type}-male-baby"]
+			}
+		},
+		"spawnconditionsByType": {
+			"deer-whitetail-*-adult": {
+				"climate": {
+					"minTemp": -5,
+					"maxTemp": 15,
+					"minRain": 0.25,
+					"minForestOrShrubs": 0.25,
+					"maxForest": 0.75,
+					"maxShrubs": 0.75,
+					"minY": 0.9,
+					"maxY": 1.4					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.006, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-redbrocket-*-adult": {
+				"climate": {
+					"minTemp": 20,
+					"maxTemp": 40,
+					"minRain": 0.5,
+					"minForestOrShrubs": 0.6,
+					"maxForest": 1.0,
+					"maxShrubs": 1.0,
+					"minY": 0.9,
+					"maxY": 1.4					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-marsh-*-adult": {
+				"climate": {
+					"minTemp": 11,
+					"maxTemp": 25,
+					"minRain": 0.35,
+					"minForestOrShrubs": 0.3,
+					"maxForest": 0.9,
+					"maxShrubs": 0.9,
+					"minY": 0.9,
+					"maxY": 1.3					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-caribou-*-adult": {
+				"climate": {
+					"minTemp": -19,
+					"maxTemp": 1,
+					"minRain": 0.35,
+					"minForestOrShrubs": 0.1,
+					"maxForest": 0.6,
+					"maxShrubs": 0.7,
+					"minY": 0.9,
+					"maxY": 1.5					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-water-*-adult": {
+				"climate": {
+					"minTemp": 5,
+					"maxTemp": 18,
+					"minRain": 0.65,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.4,
+					"maxShrubs": 0.4,
+					"minY": 0.9,
+					"maxY": 1.1					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-pudu-*-adult": {
+				"climate": {
+					"minTemp": 0,
+					"maxTemp": 8,
+					"minRain": 0.5,
+					"maxRain": 0.8,
+					"minForestOrShrubs": 0.5,
+					"maxForest": 1.0,
+					"maxShrubs": 1.0,
+					"minY": 0.9,
+					"maxY": 1.2					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-elk-*-adult": {
+				"climate": {
+					"minTemp": -12,
+					"maxTemp": -2,
+					"minRain": 0.2,
+					"maxRain": 0.7,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.4,
+					"maxShrubs": 0.6,
+					"minY": 1.2,
+					"maxY": 1.8					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.006, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-taruca-*-adult": {
+				"climate": {
+					"minTemp": 12,
+					"maxTemp": 24,
+					"minRain": 0.1,
+					"maxRain": 0.6,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.5,
+					"maxShrubs": 0.5,
+					"minY": 1.2,
+					"maxY": 1.6					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.006, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-chital-*-adult": {
+				"climate": {
+					"minTemp": 16,
+					"maxTemp": 28,
+					"minRain": 0.2,
+					"maxRain": 0.9,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.8,
+					"maxShrubs": 0.1,
+					"minY": 0.9,
+					"maxY": 1.2					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-guemal-*-adult": {
+				"climate": {
+					"minTemp": -5,
+					"maxTemp": 8,
+					"minRain": 0.1,
+					"maxRain": 0.6,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.5,
+					"maxShrubs": 0.5,
+					"minY": 1.2,
+					"maxY": 1.6					
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-pampas-*-adult": {
+				"climate": {
+					"minTemp": 6,
+					"maxTemp": 30,
+					"minRain": 0.4,
+					"maxRain": 1.0,
+					"minForestOrShrubs": 0.0,
+					"maxForest": 0.4,
+					"maxShrubs": 0.4,
+					"minY": 0.9,
+					"maxY": 1.2				
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.006, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			},
+			"deer-fallow-*-adult": {
+				"climate": {
+					"minTemp": -5,
+					"maxTemp": 15,
+					"minRain": 0.4,
+					"maxRain": 1.0,
+					"minForestOrShrubs": 0.4,
+					"maxForest": 1.0,
+					"maxShrubs": 1.0,
+					"minY": 0.9,
+					"maxY": 1.2				
+				},
+				"worldgen": {
+					"triesPerChunk": { "avg": 0.003, "var": 0 }
+				},
+				"runtime": {
+					"maxQuantityByGroup": { "code": "deer-*", "maxQuantity": 4 }
+				}
+			}
+		}
+	},
+	"soundsByType": {
+		"deer-whitetail-*-adult":{
+			"hurt": "creature/hooved/medium/buck-bellow*",
+			"death": "creature/hooved/medium/buck-bellow*",
+			"idle": "creature/hooved/medium/deer-call*"
+		},
+		"deer-redbrocket-*-adult":{
+			"hurt": "creature/hooved/small/callsmall*",
+			"death": "creature/hooved/small/callsmall*",
+			"idle": "creature/hooved/small/smallscream*"
+		},
+		"deer-marsh-*-adult":{
+			"hurt": "creature/hooved/medium/buck-bellow*",
+			"death": "creature/hooved/medium/buck-bellow*",
+			"idle": "creature/hooved/medium/deer-call*"
+		},
+		"deer-pudu-*-adult":{
+			"hurt": "creature/hooved/small/callsmall*",
+			"death": "creature/hooved/small/callsmall*",
+			"idle": "creature/hooved/small/smallscream*"
+		},
+		"deer-water-*-adult":{
+			"hurt": "creature/hooved/small/callsmall*",
+			"death": "creature/hooved/small/callsmall*",
+			"idle": "creature/hooved/small/smallscream*"
+		},
+		"deer-caribou-*-adult":{
+			"hurt": "creature/hooved/large/redstag/roar*",
+			"death": "creature/hooved/large/redstag/roar*",
+			"idle": "creature/hooved/large/elk/bellow*"
+		},
+		"deer-elk-*-adult":{
+			"hurt": "creature/hooved/generic/call*",
+			"death": "creature/hooved/large/elk/bellow*",
+			"idle": "creature/hooved/large/elk/bugle*"
+		},
+		"deer-taruca-*-adult":{
+			"hurt": "creature/hooved/medium/buck-bellow*",
+			"death": "creature/hooved/medium/buck-bellow*",
+			"idle": "creature/hooved/medium/deer-call*"
+		},
+		"deer-chital-*-adult":{
+			"hurt": "creature/hooved/medium/buck-bellow*",
+			"death": "creature/hooved/medium/buck-bellow*",
+			"idle": "creature/hooved/medium/deer-call*"
+		},
+		"deer-guemal-*-adult":{
+			"hurt": "creature/hooved/medium/buck-bellow*",
+			"death": "creature/hooved/medium/buck-bellow*",
+			"idle": "creature/hooved/medium/deer-call*"
+		},
+		"deer-pampas-*-adult":{
+			"hurt": "creature/hooved/small/callsmall*",
+			"death": "creature/hooved/small/callsmall*",
+			"idle": "creature/hooved/small/smallscream*"
+		},
+		"deer-fallow-*-adult":{
+			"hurt": "creature/hooved/medium/buck-bellow*",
+			"death": "creature/hooved/medium/buck-bellow*",
+			"idle": "creature/hooved/medium/deer-call*"
+		},
+		"*-baby":{
+			"hurt": "creature/hooved/small/fawn/fawn*",
+			"death": "creature/hooved/small/fawn/fawn*",
+			"idle": "creature/hooved/small/strange/mew*"
+		}
+	},
+	"idleSoundChance": 0.05
+}
