@@ -1,7 +1,7 @@
 [
 	{
 		code: "leather-plain",
-		sealHours: 108,
+		sealHours: 72,
 		ingredients: [
 			{ type: "item", code: "strongtanninportion", litres: 2, consumeLitres: 2 },
 			{ type: "item", code: "hide-prepared-small", quantity: 1 }
@@ -10,7 +10,7 @@
 	},
 	{
 		code: "leather-plain",
-		sealHours: 108,
+		sealHours: 72,
 		ingredients: [
 			{ type: "item", code: "strongtanninportion", litres: 4, consumeLitres: 4 },
 			{ type: "item", code: "hide-prepared-medium", quantity: 1 }
@@ -19,7 +19,7 @@
 	},
 	{
 		code: "leather-plain",
-		sealHours: 108,
+		sealHours: 72,
 		ingredients: [
 			{ type: "item", code: "strongtanninportion", litres: 6, consumeLitres: 6 },
 			{ type: "item", code: "hide-prepared-large", quantity: 1 }
@@ -28,7 +28,7 @@
 	},
 	{
 		code: "leather-plain",
-		sealHours: 108,
+		sealHours: 72,
 		ingredients: [
 			{ type: "item", code: "strongtanninportion", litres: 10, consumeLitres: 10 },
 			{ type: "item", code: "hide-prepared-huge", quantity: 1 }

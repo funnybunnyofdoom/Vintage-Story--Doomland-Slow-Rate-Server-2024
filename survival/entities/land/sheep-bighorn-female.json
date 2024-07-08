@@ -118,9 +118,9 @@
 				requiresNearbyEntityRange: 10,
 				spawnQuantityMin: 1,
 				spawnQuantityMax: 1,
-				pregnancyDays: 20,
-				multiplyCooldownDaysMin: 4,
-				multiplyCooldownDaysMax: 11,
+				pregnancyDays: 8,
+				multiplyCooldownDaysMin: 2,
+				multiplyCooldownDaysMax: 5,
 				portionsEatenForMultiply: 10
 			}, 
 			{ 

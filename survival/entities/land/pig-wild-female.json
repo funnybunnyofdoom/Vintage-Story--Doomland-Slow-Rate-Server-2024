@@ -110,9 +110,9 @@
 				growthCapEntityCodes: ["pig-wild-piglet", "pig-wild-female", "pig-wild-male"],
 				requiresNearbyEntityCode: "pig-wild-male",
 				requiresNearbyEntityRange: 10,
-				pregnancyDays: 25,
-				multiplyCooldownDaysMin: 6,
-				multiplyCooldownDaysMax: 11,
+				pregnancyDays: 11,
+				multiplyCooldownDaysMin: 2,
+				multiplyCooldownDaysMax: 5,
 				portionsEatenForMultiply: 10
 			},
 			{

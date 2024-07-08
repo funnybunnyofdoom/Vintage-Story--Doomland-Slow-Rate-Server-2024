@@ -11,7 +11,7 @@
 	materialDensity: 258,
 	combustibleProps: {
 		burnTemperature: 600,
-		burnDuration: 4,
+		burnDuration: 172,
 	},
 	guiTransform: {
 		translation: { x: 0, y: 0, z: 0 },

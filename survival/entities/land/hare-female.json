@@ -111,9 +111,9 @@
 				spawnQuantityMin: 1,
 				spawnQuantityMax: 4,
 				eatAnyway: true,
-				pregnancyDays: 5,
-				multiplyCooldownDaysMin: 2,
-				multiplyCooldownDaysMax: 5,
+				pregnancyDays: 2,
+				multiplyCooldownDaysMin: 1,
+				multiplyCooldownDaysMax: 3,
 				portionsEatenForMultiply: 2
 			}, 
 			{ 

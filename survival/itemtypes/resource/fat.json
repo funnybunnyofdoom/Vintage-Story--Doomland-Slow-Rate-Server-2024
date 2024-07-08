@@ -21,7 +21,7 @@
 	materialDensity: 620,
 	combustibleProps: {
 		burnTemperature: 400,
-		burnDuration: 96,
+		burnDuration: 4138,
 	},
 	nutritionProps: { saturation: 200, foodcategory: "Protein" },
 	guiTransform: {

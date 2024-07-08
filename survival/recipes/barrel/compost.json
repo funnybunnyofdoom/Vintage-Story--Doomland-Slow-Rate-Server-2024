@@ -1,6 +1,6 @@
 {
 	code: "compost",
-	sealHours: 480,
+	sealHours: 168,
 	ingredients: [
 		{ type: "item", code: "rot", litres: 64 },
 	],

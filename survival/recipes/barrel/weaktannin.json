@@ -1,7 +1,7 @@
 [
 	{
 		code: "weaktannin",
-		sealHours: 24,
+		sealHours: 8,
 		ingredients: [
 			{ type: "block", code: "log-placed-oak-ud",  quantity: 1 },
 			{ type: "item", code: "waterportion",  litres: 10 },
@@ -10,7 +10,7 @@
 	},
 	{
 		code: "weaktannin",
-		sealHours: 24,
+		sealHours: 8,
 		ingredients: [
 			{ type: "block", code: "log-placed-acacia-ud",  quantity: 1 },
 			{ type: "item", code: "waterportion",  litres: 10 },

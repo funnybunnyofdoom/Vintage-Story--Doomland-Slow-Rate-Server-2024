@@ -227,7 +227,7 @@
 			{ code: "harvestable", drops: [
 				{
 					type: "item", 
-					code: "bushmeat-raw", 
+					code: "redmeat-raw", 
 					quantityByType: {
 						"*-black": { avg: 12, var: 2 },
 						"*-brown": { avg: 16, var: 2 },

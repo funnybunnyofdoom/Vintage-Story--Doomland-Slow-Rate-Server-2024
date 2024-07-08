@@ -1,7 +1,7 @@
 [
 	{
 		code: "soakedhidelime",
-		sealHours: 20,
+		sealHours: 12,
 			ingredients: [
 			{ type: "item", code: "limewaterportion", litres: 2, consumeLitres: 2 },
 			{ type: "item", code: "hide-raw-small", quantity: 1 }
@@ -10,7 +10,7 @@
 	},
 	{
 		code: "soakedhidelime",
-		sealHours: 20,
+		sealHours: 12,
 		ingredients: [
 			{ type: "item", code: "limewaterportion", litres: 4, consumeLitres: 4 },
 			{ type: "item", code: "hide-raw-medium", quantity: 1 }
@@ -19,7 +19,7 @@
 	},
 	{
 		code: "soakedhidelime",
-		sealHours: 20,
+		sealHours: 12,
 		ingredients: [
 			{ type: "item", code: "limewaterportion", litres: 6, consumeLitres: 6 },
 			{ type: "item", code: "hide-raw-large", quantity: 1 }
@@ -28,7 +28,7 @@
 	},
 	{
 		code: "soakedhidelime",
-		sealHours: 20,
+		sealHours: 12,
 		ingredients: [
 			{ type: "item", code: "limewaterportion", litres: 10, consumeLitres: 10 },
 			{ type: "item", code: "hide-raw-huge", quantity: 1 }

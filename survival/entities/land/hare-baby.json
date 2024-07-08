@@ -82,7 +82,7 @@
 			{ code: "harvestable", drops: [] },
 			{ code: "breathe" },
 			{ 
-				hoursToGrow: 336,
+				hoursToGrow: 72,
 				adultEntityCodes: ["hare-male-ashgrey", "hare-female-ashgrey", "hare-male-darkbrown", "hare-female-darkbrown", "hare-male-gold", "hare-female-gold", "hare-male-lightbrown", "hare-female-lightbrown", "hare-male-lightgrey", "hare-female-lightgrey", "hare-male-silver", "hare-female-silver", "hare-male-smokegrey", "hare-female-smokegrey"],
 				code: "grow" 
 			},

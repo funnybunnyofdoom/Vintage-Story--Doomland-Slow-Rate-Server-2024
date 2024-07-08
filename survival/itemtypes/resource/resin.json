@@ -8,7 +8,7 @@
 	creativeinventory: { "general": ["*"], "items": ["*"] },
 	combustibleProps: {
 		burnTemperature: 900,
-		burnDuration: 6	
+		burnDuration: 240	
 	},
 	attributes: {
 		displaycaseable: true, 

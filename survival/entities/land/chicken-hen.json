@@ -119,12 +119,12 @@
 			{ code: "multiplybase",
 				enabledByType: { "*-henpoult": false, "*": true },
 				multiplyCooldownDaysMin: 0,
-				multiplyCooldownDaysMax: 3,
+				multiplyCooldownDaysMax: 2,
 				portionsEatenForMultiply: 4
 			},
 			{ code: "grow",
 				enabledByType: { "*-henpoult": true, "*": false },
-				hoursToGrow: 72,
+				hoursToGrow: 24,
 				adultEntityCodes: ["chicken-hen"] 
 			},
 			{ code: "breathe" },

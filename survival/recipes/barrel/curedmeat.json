@@ -1,6 +1,6 @@
 {
 	code: "curedmeat",
-	sealHours: 480,
+	sealHours: 168,
 	ingredients: [
 		{ type: "item", code: "salt",  quantity: 2 },
 		{ type: "item", code: "*-raw", name: "meat", quantity: 1, allowedVariants: ["redmeat", "poultry", "bushmeat", "fish"] }
