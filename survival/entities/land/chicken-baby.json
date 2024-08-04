@@ -98,7 +98,7 @@
 			},
 			{ 
 				code: "grow",
-				hoursToGrow: 128,
+				hoursToGrow: 24,
 				adultEntityCodes: ["chicken-henpoult", "chicken-henpoult", "chicken-henpoult", "chicken-henpoult", "chicken-henpoult", "chicken-henpoult", "chicken-henpoult", "chicken-henpoult", "chicken-henpoult", "chicken-roosterpoult"],
 			},
 			{ code: "breathe" },
